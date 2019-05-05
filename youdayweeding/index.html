@@ -22,11 +22,12 @@
             <li class="contact-phone">+7(916) 040-46-99</li>
             <li class="contact-phone">+7(910) 088-71-77</li>
           </ul>
-          <div class="social"><a class="order-call" href="#feed-back">Заказть звонок</a>
+          <div class="social">
+            <button class="order-call js-open-modal" data-modal="call">Заказть звонок</button>
             <ul class="social-icons">
-              <li><a href="#"><img src="img/menu/vk.png" alt="vk"/></a></li>
+              <li><a href="https://vk.com/id37673532"><img src="img/menu/vk.png" alt="vk"/></a></li>
               <li><a href="#"><img src="img/menu/inst.png" alt="instagram"/></a></li>
-              <li><a href="#"><img src="img/menu/facebook.png" alt="facebook"/></a></li>
+              <li><a href="https://www.facebook.com/denis.meshcheryakov.71"><img src="img/menu/facebook.png" alt="facebook"/></a></li>
             </ul>
           </div>
         </div>
@@ -62,7 +63,8 @@
               Ретушь 20 фотографий<br>
               Слайд шоу фотографий
             </p>
-          </div><a class="create-order">Заказать</a>
+          </div>
+          <button class="create-order js-open-modal" data-modal="order-service" id="service-photo">Заказать</button>
         </div>
         <div class="price-card">
           <div class="wrapper">
@@ -77,7 +79,8 @@
               Клип 3-5 мин.<br>
               Свадебный фильм 1.5-2 часа
             </p>
-          </div><a class="create-order">Заказать</a>
+          </div>
+          <button class="create-order js-open-modal" data-modal="order-service" id="service-video">Заказать</button>
         </div>
         <div class="price-card">
           <div class="wrapper">
@@ -98,7 +101,8 @@
               Скидка на Love Story 50%<br>
               Ретушь 50 фотографий<br>
             </p>
-          </div><a class="create-order">Заказать</a>
+          </div>
+          <button class="create-order js-open-modal" data-modal="order-service" id="service-photo-plus-video">Заказать</button>
         </div>
       </div>
       <div class="more">
@@ -184,18 +188,18 @@
       <h2 class="section-header">Видео на свадьбу</h2>
       <div class="container">
         <div class="video-wrap">
-          <div class="video js-open-modal" style="background-image: url('img/videos/video1.jpg')" data-modal="video1">
+          <div class="video js-open-modal" style="background-image: url('/img/videos/video1.jpg')" data-modal="video1">
             <p class="video-header">Артём & Наташа</p><img src="img/videos/play.png" alt="Play"/>
           </div>
-          <div class="video js-open-modal" style="background-image: url('img/videos/video2.jpg')" data-modal="video2">
+          <div class="video js-open-modal" style="background-image: url('/img/videos/video2.jpg')" data-modal="video2">
             <p class="video-header">Владимир & Екатерина</p><img src="img/videos/play.png" alt="Play"/>
           </div>
         </div>
         <div class="video-wrap">
-          <div class="video js-open-modal" style="background-image: url('img/videos/video3.jpg')" data-modal="video3">
+          <div class="video js-open-modal" style="background-image: url('/img/videos/video3.jpg')" data-modal="video3">
             <p class="video-header">Леван & Анна</p><img src="img/videos/play.png" alt="Play"/>
           </div>
-          <div class="video js-open-modal" style="background-image: url('img/videos/video4.jpg')" data-modal="video4">
+          <div class="video js-open-modal" style="background-image: url('/img/videos/video4.jpg')" data-modal="video4">
             <p class="video-header">Дмитрий & Анна</p><img src="img/videos/play.png" alt="Play"/>
           </div>
         </div>
@@ -263,11 +267,26 @@
               г. Москва, ул. Большая Татарская, дом 33<br>
               aromagika@mail.ru<br>
               Пн-Вс с 9:00 до 21:00
+              
             </p>
           </div>
         </div>
       </div>
-    </footer><div class="modal js-modal" data-modal="video1">
+    </footer><div class="modal js-modal contact-modal" data-modal="call">
+    <form action="mail.php" method="POST">
+      <input type="text" name="user_name" placeholder="Имя"/>
+      <input type="text" name="user_phone" placeholder="Телефон"/>
+      <input type="submit" value="Отправить"/>
+    </form></div>
+<div class="modal js-modal contact-modal" data-modal="order-service">
+    <form action="mail.php" method="POST">
+      <input type="text" name="user_name" placeholder="Имя"/>
+      <input type="text" name="user_phone" placeholder="Телефон"/>
+      <input type="email" name="user_email" placeholder="Эл. почта"/>
+      <input type="hidden" value="none" name="service" id="selected-sevice"/>
+      <input type="submit" value="Отправить"/>
+    </form></div>
+<div class="modal js-modal" data-modal="video1">
     <div class="video-block"><iframe src="https://www.youtube.com/embed/lrKUtv-JSJY?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			</div></div>
 <div class="modal js-modal" data-modal="video2">
     <div class="video-block"><iframe src="https://www.youtube.com/embed/wCZRCH6Vz2I?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
