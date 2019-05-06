@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		link(rel="stylesheet" type="text/css" href="css/style.css")
+		link(href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet")
+		link(link href="https://fonts.googleapis.com/css?family=EB+Garamond:700&amp;subset=cyrillic" rel="stylesheet")
+		link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js")
+		script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+		title You Day Wedding - фото и видеосъемка мероприятий
+	body
+		header 
+			menu.menu(id="home")
+				a(href="#")
+					img(src="img/menu/logo.png", alt="Logo").logo
+				ul.menu-items
+					li 
+						a.menu-item(href="#home") Главная
+					li
+						a.menu-item(href="#price") Услуги и Цены
+					li
+						a.menu-item(href="#portfolio") Портфолио
+					li 
+						a.menu-item(href="#contacts") Контакты
+				.menu-contacts
+					ul.contact-phones
+						li.contact-phone +7(916) 040-46-99
+						li.contact-phone +7(910) 088-71-77
+					.social
+						button(data-modal="call").order-call.js-open-modal Заказть звонок
+						ul.social-icons
+							li
+								a(href="https://vk.com/id37673532" target="_blank")
+									img(src="img/menu/vk.png", alt="vk")
+							li
+								a(href="https://www.instagram.com/youday_pro/?utm_source=ig_profile_share&igshid=1oikcxpreo3lv" target="_blank")
+									img(src="img/menu/inst.png", alt="instagram")
+							li
+								a(href="https://www.facebook.com/denis.meshcheryakov.71" target="_blank")
+									img(src="img/menu/facebook.png", alt="facebook")
+		section.slider
+			img(src="img/slider/slide-img1.jpg").slider-item
+			img(src="img/slider/slide-img2.jpg").slider-item
+			img(src="img/slider/slide-img3.jpg").slider-item
+			img(src="img/slider/slide-img4.jpg").slider-item
+		main.container.price-section(id="price")
+			h2.section-header Услуги и Цены
+			p.price-text.
+				У нас вы можете заказать съемку на любое количество часов<br>	
+				Цена будет рассчитана, исходя из конкретных потребностей.<br>
+				До конца мая действует скидка 30%
+			.row
+				.price-card
+					.wrapper
+						.img-wrapper
+							img(src="img/price/price-img1.jpg", alt="Фотосъемка")
+						h2.price-card-header Фотосъёмка
+						p.old-price 20 000
+						p.new-price 15 000
+						p.price-content-text.
+							10 часов съёмки<br>
+							Обработка,цветокоррекция
+							и художественная ретушь<br>
+							От 1000 фотографий с цветокоррекцией<br>
+							<span>ПОДАРКИ</span> (1 на выбор)<br>
+							Доп. час съёмки<br>
+							Ретушь 20 фотографий<br>
+							Слайд шоу фотографий
+					button(data-modal="order-service")#service-photo.create-order.js-open-modal Заказать
+				.price-card
+					.wrapper
+						.img-wrapper
+							img(src="img/price/price-img2.jpg", alt="Фотосъемка")
+						h2.price-card-header Видеосъёмка
+						p.old-price 26 000
+						p.new-price 20 000
+						p.price-content-text.
+							10 часов съёмки<br>
+							Монтаж и цветокоррекция<br>
+							1 инста ролик в подарок!<br>
+							Клип 3-5 мин.<br>
+							Свадебный фильм 1.5-2 часа
+					button(data-modal="order-service")#service-video.create-order.js-open-modal Заказать
+				.price-card
+					.wrapper
+						.img-wrapper
+							img(src="img/price/price-img3.jpg", alt="Фото + Видео")
+						h2.price-card-header Фото + Видео
+						p.old-price 50 000
+						p.new-price 38 000
+						p.price-content-text.
+							10 часов съёмки<br>
+							1 фотограф +1 видеооператор<br>
+							От 1000 фотографий с цветокоррекцией<br>
+							Клип 3-5мин.<br>
+							Свадебный фильм 1.5-2 часа<br>
+							Фотокнига в подарок<br>
+							<span>ПОДАРКИ</span><br>
+							Электронная стабилизация<br>
+							Слоу моушен<br>
+							Скидка на Love Story 50%<br>
+							Ретушь 50 фотографий<br>
+					button(data-modal="order-service")#service-photo-plus-video.create-order.js-open-modal Заказать
+			.more
+				h3.more-header А ещё мы можем предложить:
+				p.more-text.
+					Предсвадебное Love Story по индивидуальному сценарию<br>
+					Подбор ведущего для вашей свадьбы<br>
+					Дополнительное звуковое оборудование<br>
+		section.feed-back#feed-back
+			h2.feed-back-header Связаться с нами
+			form(action="mail.php", method="POST")
+				input(type="text" name="user_name" placeholder="Имя")
+				input(type="text" name="user_phone" placeholder="Телефон")
+				input(type="submit" value="Отправить")
+		section.corusel-section(id="portfolio")
+				h2.section-header Свадебная фотосессия
+				.corusel
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img1.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img2.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img3.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img4.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img5.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img6.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img7.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img8.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img9.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img10.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img11.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img12.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img13.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img14.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img15.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img16.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img17.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img18.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img19.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img20.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img21.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img22.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img23.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img24.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img25.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img26.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img27.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img28.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img29.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img30.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img31.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img32.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img33.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img34.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img35.jpg").corusel-img
+					.corusel-item.js-open-modal(data-modal="slider")
+						img(data-lazy="img/corusel/corusel-img36.jpg").corusel-img
+		section.couples
+			h2.section-header Свадебные серии
+			.container
+				.couples-wrap
+					.couple
+						img(src="img/couples/couple1.jpg", alt="Леонид и Элла").couple-img
+						p.couple-text Леонид и Элла
+					.couple
+						img(src="img/couples/couple2.jpg", alt="Владимир и Екатерина").couple-img
+						p.couple-text Владимир и Екатерина
+				.couples-wrap
+					.couple
+						img(src="img/couples/couple3.jpg", alt="Артём и Зарина").couple-img
+						p.couple-text Артём и Зарина
+					.couple
+						img(src="img/couples/couple4.jpg", alt="Дмитрий и Анна").couple-img
+						p.couple-text Дмитрий и Анна
+		section.videos
+			h2.section-header Видео на свадьбу
+			.container
+				.video-wrap
+					.video(style="background-image: url('img/videos/video1.jpg')" data-modal="video1").js-open-modal
+						p.video-header Артём & Наташа
+						img(src="img/videos/play.png", alt="Play")
+					.video(style="background-image: url('img/videos/video2.jpg')" data-modal="video2").js-open-modal
+						p.video-header Владимир & Екатерина
+						img(src="img/videos/play.png", alt="Play")
+				.video-wrap
+					.video(style="background-image: url('img/videos/video3.jpg')" data-modal="video3").js-open-modal
+						p.video-header Леван & Анна
+						img(src="img/videos/play.png", alt="Play")
+					.video(style="background-image: url('img/videos/video4.jpg')" data-modal="video4").js-open-modal
+						p.video-header Дмитрий & Анна
+						img(src="img/videos/play.png", alt="Play")
+		section.reviews.container
+			h2.section-header Отзывы
+			.review-wrap
+				.review
+					img(src="img/reviews/avatar-img1.jpg", alt="Владимир и Екатерина").review-avatar
+					.review-content
+						p.review-header Владимир и Екатерина
+						p.review-text Хотим выразить огромную благодарность команде YouDay! Фотографии и свадебный фильм получились замечательными! Спасибо! Катя и Владимир
+				.review
+					img(src="img/reviews/avatar-img2.jpg", alt="Дарья и Сергей").review-avatar
+					.review-content
+						p.review-header Дарья и Сергей
+						p.review-text Ребята не только фотографировали и снимали видео, но еще и консультировали по нашему свадебному дню,за что им большое спасибо! Качество съемки на высшем уровне.Советую. Сергей и Дарья
+			.review-wrap
+				.review
+					img(src="img/reviews/avatar-img3.jpg", alt="Алексей и Любовь").review-avatar
+					.review-content
+						p.review-header Алексей и Любовь
+						p.review-text Спасибо команде YouDay! Нам все очень понравилось! И качество услуг и адекватная цена, что тоже важно. Успехов и процветания вам! Алексей и Любовь
+				.review
+					img(src="img/reviews/avatar-img4.jpg", alt="Ярослав и Кристина").review-avatar
+					.review-content
+						p.review-header Ярослав и Кристина
+						p.review-text Очень приятные в общении ребята, слаженно работают. Помогают и консультируют в проведении свадебного дня. Материал отдали довольно быстро.Вообщем, советую! Ярослав и Кристина
+		article.news
+			h2.section-header Новости
+			.news-container
+				p.news-header Внимание!
+				p.news-text.
+					Успейте заказать съемку на лето<br>
+					по зимним ценам!<br>
+					Акция действует до 31 мая<br>
+		footer.footer(id="contacts")
+			.container
+				.footer-feed-back
+					h2 Записаться на фотосессию
+					form(action="mail.php", method="POST")
+						input(type="text" name="user_name" placeholder="Имя")
+						input(type="text" name="user_phone" placeholder="Фамилия")
+						input(type="email" name="user_email" placeholder="Эл. почта")
+						input(type="submit" value="Отправить")
+				.footer-contacts
+					.footer-contacts-container
+						h2 Наши контакты
+						p.
+							+7(916) 040-46-99<br>
+							+7(910) 088-71-77<br>
+							г. Москва, ул. Большая Татарская, дом 33<br>
+							aromagika@mail.ru<br>
+							Пн-Вс с 9:00 до 21:00
+				a(href="#home").uparrow ^
+					
+
+		<div class="modal js-modal contact-modal" data-modal="call">
+			form(action="mail.php", method="POST")
+				input(type="text" name="user_name" placeholder="Имя")
+				input(type="text" name="user_phone" placeholder="Телефон")
+				input(type="submit" value="Отправить")
+		</div>
+
+		<div class="modal js-modal contact-modal" data-modal="order-service">
+			form(action="mail.php", method="POST")
+				input(type="text" name="user_name" placeholder="Имя")
+				input(type="text" name="user_phone" placeholder="Телефон")
+				input(type="email" name="user_email" placeholder="Эл. почта")
+				input(type="hidden" value="none" name="service")#selected-sevice
+				input(type="submit" value="Отправить")
+		</div>
+
+		<div class="modal js-modal" data-modal="video1">
+			.video-block
+				<iframe src="https://www.youtube.com/embed/lrKUtv-JSJY?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+		</div>
+
+		<div class="modal js-modal" data-modal="video2">
+			.video-block
+				<iframe src="https://www.youtube.com/embed/wCZRCH6Vz2I?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="modal js-modal" data-modal="video3">
+			.video-block
+				<iframe src="https://www.youtube.com/embed/vfxnIctjNJs?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div class="modal js-modal" data-modal="video4">
+			.video-block
+				<iframe src="https://www.youtube.com/embed/Zc71zYSukms?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<div class="modal js-modal" data-modal="slider">
+			.slider-modal
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img1.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img2.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img3.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img4.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img5.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img6.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img7.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img8.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img9.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img10.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img11.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img12.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img13.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img14.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img15.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img16.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img17.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img18.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img19.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img20.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img21.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img22.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img23.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img24.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img25.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img26.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img27.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img28.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img29.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img30.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img31.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img32.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img33.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img34.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img35.jpg');")
+				.slider-item-modal(style="background-image: url('img/corusel/corusel-img36.jpg');")
+		</div>
+
+		<div class="overlay js-modal-overlay" id="close_vid">
+			<i class="flaticon-cross-out modal__cross"></i>
+			<i class="flaticon-expand modal_full"></i>
+		</div>
+		
+
+		script(type="text/javascript" src="js/main.js")

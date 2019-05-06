@@ -1,0 +1,102 @@
+.modal 
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 80%
+    width: 75%
+    z-index: 20
+    display: none
+    
+
+.modal.is-show,
+.overlay.is-show
+    display: block
+
+.overlay
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(0, 0, 0, .9)
+    z-index: 10
+    display: none
+
+.modal__cross, .modal_full
+    position: absolute
+    top: 30px
+    font-size: 25px
+    color: #ccc
+    cursor: pointer
+    transition: .4s
+    margin: 0
+    &:hover
+        transition: .4s
+        color: #111
+
+.modal__cross_dark
+    color: #aaa
+
+.modal__cross_dark:hover
+    color: #fff
+
+.modal__cross
+    right: 30px
+
+.modal_full
+    left: 30px
+
+.flaticon-minimize:before, 
+.flaticon-expand:before,
+.modal__cross:before
+    margin: 0
+
+.slider-modal
+    height: 80vh
+    width: 100%
+    position: relative
+    
+    .slider-item-modal
+        height: 80vh !important
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center center
+
+    .slick-prev
+        left: -100px
+        height: 80vh
+
+    .slick-next
+        right: -100px
+        height: 80vh
+
+
+
+.video-block
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    padding-bottom: 56.25%
+    height: 0
+    overflow: hidden
+
+.video-block iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+//Contact
+.contact-modal
+    form
+        display: flex
+        height: 100%
+        flex-flow: column
+        justify-content: center
+        align-items: center
+        input
+            width: 50%
+            margin: 15px 0
