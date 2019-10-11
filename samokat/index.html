@@ -10,21 +10,21 @@
   <body>
     <header>
       <div class="container header_container">
-        <div class="row header_top_part">
-          <div class="col-6 header_info">
-            <div class="header_logo"><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/>
+        <div class="row logo_part">
+          <div class="col-6 logo_info">
+            <div class="logo"><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/>
               <p class="logo_text">iBolitTech.by</p><img class="menu_burger" src="img/icons/burger.svg" alt="Меню"/>
             </div>
-            <p class="header_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
+            <p class="logo_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
           </div>
-          <div class="col-6 header_contacts">
-            <div class="header_phone"><a class="header_phone_number" href="tel:+375 29 333-33-33">+375 29 333-33-33</a>
+          <div class="col-6 contacts">
+            <div class="phone"><a class="phone_number" href="tel:+375 29 333-33-33">+375 29 333-33-33</a>
               <p class="feedback">Перезвоним за 2 минуты</p>
             </div>
-            <ul class="headers_messangers">
-              <li class="header_messanger"><a href="#"><img src="img/icons/whatsapp.svg" alt="whatsapp"/></a></li>
-              <li class="header_messanger"><a href="#"><img src="img/icons/viber.svg" alt="viber"/></a></li>
-              <li class="header_messanger"><a href="#"><img src="img/icons/telegram.svg" alt="telegram"/></a></li>
+            <ul class="messangers">
+              <li class="messanger"><a href="#"><img src="img/icons/whatsapp.svg" alt="whatsapp"/></a></li>
+              <li class="messanger"><a href="#"><img src="img/icons/viber.svg" alt="viber"/></a></li>
+              <li class="messanger"><a href="#"><img src="img/icons/telegram.svg" alt="telegram"/></a></li>
             </ul>
           </div>
         </div>
@@ -235,9 +235,50 @@
     </section>
     <section class="reviews" style="background-image: url('img/reviews_top_bg.svg');">
       <div class="container">
-        <h2 class="section_header">КАТАЛОГ ЗАПЧАСТЕЙ ДЛЯ ЭЛЕКТРОСАМОКАТОВ</h2>
+        <h2 class="section_header">РЕАЛЬНЫЕ ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+        <div class="slider"></div>
+        <button class="feedback feedback_btn">ОСТАВИТЬ ОТЗЫВ</button>
       </div>
     </section>
+    <section class="footer_feedback">
+      <div class="container">
+        <div class="footer_feedback_container">
+          <p class="footer_feedback_header">Хватит мучить себя<br><span>неисправной техникой!</span></p>
+          <p class="footer_feedback_text">Введите ваш номер и кликните на кнопку <span>"бесплатная консультация"</span>, через 5 минут с вами свяжется наш менеджер который рассчитает приблизительную стоимость ремонта:</p>
+          <form class="footer_feedback_form">
+            <input type="text" name="phone" placeholder="+375 (_ _) _ _ _ - _ _ - _ _"/>
+            <input type="submit" value="БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"/>
+          </form>
+        </div><img class="footer_feedback_bg" src="img/footer_bottom_bg.svg"/><img class="footer_feedback_img" src="img/footer_samokat.png"/>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row logo_part">
+          <div class="col-6 logo_info">
+            <div class="logo"><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/>
+              <p class="logo_text">iBolitTech.by</p>
+            </div>
+            <p class="logo_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
+          </div>
+          <div class="col-6 contacts">
+            <div class="phone"><a class="phone_number" href="tel:+375 29 333-33-33">+375 29 333-33-33</a>
+              <p class="feedback">Перезвоним за 2 минуты</p>
+            </div>
+            <ul class="messangers">
+              <li class="messanger"><a href="#"><img src="img/icons/whatsapp.svg" alt="whatsapp"/></a></li>
+              <li class="messanger"><a href="#"><img src="img/icons/viber.svg" alt="viber"/></a></li>
+              <li class="messanger"><a href="#"><img src="img/icons/telegram.svg" alt="telegram"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="container copyright_container">
+        <div class="copyright">© iBolitTech.by. Все права защищены</div>
+        <div class="privacy">Политика конфиденциальности</div>
+      </div>
+    </footer>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
   </body>
