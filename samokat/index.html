@@ -295,7 +295,7 @@
           <p class="footer_feedback_header">Хватит мучить себя<br><span>неисправной техникой!</span></p>
           <p class="footer_feedback_text">Введите ваш номер и кликните на кнопку <span>"бесплатная консультация"</span>, через 5 минут с вами свяжется наш менеджер который рассчитает приблизительную стоимость ремонта:</p>
           <form class="footer_feedback_form">
-            <input type="text" name="phone" placeholder="+375 (_ _) _ _ _ - _ _ - _ _"/>
+            <input class="phone_mask" type="tel" name="phone" placeholder="+375 (_ _) _ _ _ - _ _ - _ _"/>
             <input type="submit" value="БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ"/>
           </form>
         </div>
@@ -329,10 +329,19 @@
         <div class="privacy">Политика конфиденциальности</div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <div class="modal" id="modal_feedback">
+      <p class="modal_feedback_header">Оставить заявку</p>
+      <fomr class="modal_form">
+        <input type="text" name="name" placeholder="Ваше имя"/>
+        <input class="phone_mask" type="tel" name="phone" placeholder="+375 (_ _) _ _ _ - _ _ - _ _"/>
+        <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"/>
+      </fomr><img class="modal_close_btn" src="img/icons/close.svg" alt="Закрыть" id="close_feedback_modal"/>
+    </div>
+    <script type="text/javascript" src="js/numbered.js"></script>
     <script type="text/javascript" src="js/relax.min.js"></script>
     <script type="text/javascript" src="js/simpleParallax.min.js"></script>
+    <script type="text/javascript" src="js/iziModal.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
