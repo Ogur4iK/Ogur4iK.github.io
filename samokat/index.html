@@ -11,13 +11,14 @@
     <header id="home">
       <div class="container header_container">
         <div class="row logo_part">
-          <div class="col-6 logo_info">
-            <div class="logo"><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/>
-              <p class="logo_text">iBolitTech.by</p><img class="menu_burger" src="img/icons/burger.svg" alt="Меню"/>
+          <div class="logo_info">
+            <div class="logo"><img class="menu_burger" src="img/icons/burger.svg" alt="Меню"/><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/></div>
+            <div class="logo_wrap">
+              <p class="logo_text">iBolitTech.by</p>
+              <p class="logo_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
             </div>
-            <p class="logo_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
           </div>
-          <div class="col-6 contacts">
+          <div class="contacts">
             <div class="phone"><a class="phone_number" href="tel:+375 29 333-33-33">+375 29 333-33-33</a>
               <p class="feedback">Перезвоним за 2 минуты</p>
             </div>
@@ -29,6 +30,9 @@
           </div>
         </div>
         <div class="header_text_container">
+          <div class="scroll_down">
+            <div class="scroll_down_text">ЛИСТАЙ НИЖЕ</div><img class="scroll_down_img" src="img/icons/scroll_down.svg"/>
+          </div>
           <div class="pre_header"> 
             <p>Честный и качественный</p>
             <hr/>
@@ -48,15 +52,12 @@
           </ul>
           <button class="feedback_btn feedback">РАССЧИТАТЬ СТОИМОСТЬ</button>
         </div><img class="relax header_img" src="img/header_samokat.png" data-rellax-speed="4"/><img class="header_img_bg" src="img/header_samokat_bg.svg"/>
-        <div class="scroll_down">
-          <div class="scroll_down_text">ЛИСТАЙ НИЖЕ</div><img class="scroll_down_img" src="img/icons/scroll_down.svg"/>
-        </div>
       </div>
     </header>
     <section class="container" id="about_us">
       <h2 class="section_header">НЕМНОГО О НАС</h2>
-      <div class="row">
-        <div class="col-6">
+      <div class="about_container">
+        <div class="about_content">
           <p class="about_us_text">Ремонт любой техники можно доверить только профессионалам, что уж говорить о высокотехнологической технике, такой как электросамокаты. Ваш транспорт должен быть не только быстрым, но и безопасным. Наши специалисты помогут Вам решить практически любые проблемы, связанные с Вашим двухколесным транспортом. Только сертифицированные и высококачественные запчасти, проверенные специалисты — гарантируют, что Вы в кротчайшие сроки окажетесь снова на колесах.</p>
           <h4 class="models_header">Осуществляем ремонт следующих электросамокатов:</h4>
           <ul class="models">
@@ -67,49 +68,49 @@
             <li>Kugoo.</li>
           </ul>
         </div>
-        <div class="col-6"><img class="about_us_img" src="img/about_us_img.jpg"/></div>
+        <div class="about_us_img" style="background-image: url('img/about_us_img.jpg');"></div>
       </div>
     </section>
     <section id="features" style="background-image: url('img/capture_top_bg.svg');">
       <div class="container">
         <h2 class="section_header">ШЕСТЬ ПРИЧИН ОБРАТИТЬСЯ ИМЕННО К НАМ</h2>
         <div class="row">
-          <div class="col-4 feature">
+          <div class="col feature">
             <div class="feature_img_container"><img class="feature_img" src="img/icons/features/feature-1.svg" alt="Диагностика"/></div>
             <div class="feature_text">
               <p class="feature_header">Поиск проблемы</p>
               <p class="feature_description">Диагностика в течении<br>2-х часов</p>
             </div>
           </div>
-          <div class="col-4 feature">
+          <div class="col feature">
             <div class="feature_img_container"><img class="feature_img" src="img/icons/features/feature-2.svg" alt="Скорость"/></div>
             <div class="feature_text">
               <p class="feature_header">Время — деньги</p>
               <p class="feature_description">Ремонт не более 3-х<br>рабочих дней</p>
             </div>
           </div>
-          <div class="col-4 feature">
+          <div class="col feature">
             <div class="feature_img_container"><img class="feature_img" src="img/icons/features/feature-3.svg" alt="Гарантия"/></div>
             <div class="feature_text">
               <p class="feature_header">Не только обещания</p>
               <p class="feature_description">Гарантия на выполненные<br>работы</p>
             </div>
           </div>
-          <div class="col-4 feature">
+          <div class="col feature">
             <div class="feature_img_container"><img class="feature_img" src="img/icons/features/feature-4.svg" alt="Качество"/></div>
             <div class="feature_text">
               <p class="feature_header">Высокое качество</p>
               <p class="feature_description">У нас только оригинальные запчасти</p>
             </div>
           </div>
-          <div class="col-4 feature">
+          <div class="col feature">
             <div class="feature_img_container"><img class="feature_img" src="img/icons/features/feature-5.svg" alt="Ассортимент"/></div>
             <div class="feature_text">
               <p class="feature_header">Все и сразу</p>
               <p class="feature_description">Работаем более чем с 40 моделями</p>
             </div>
           </div>
-          <div class="col-4 feature">
+          <div class="col feature">
             <div class="feature_img_container"><img class="feature_img" src="img/icons/features/feature-6.svg" alt="Диагностика"/></div>
             <div class="feature_text">
               <p class="feature_header">Не нужно никуда идти</p>
@@ -120,61 +121,55 @@
       </div>
     </section>
     <section class="capture" style="background-image: linear-gradient(0deg, rgba(23, 23, 23, 0.8), rgba(23, 23, 23, 0.8)), url(img/capture_bg.jpg);">
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <p class="capture_text">Закажи ремонт электросамоката сейчас<br>и получи скидку 15%!</p>
-          </div>
-          <div class="col-4">
-            <button class="feedback feedback_btn">ЗАКАЗАТЬ РЕМОНТ</button>
-          </div>
-        </div>
+      <div class="container capture_container">
+        <p class="capture_text">Закажи ремонт электросамоката сейчас<br>и получи скидку 15%!</p>
+        <button class="feedback feedback_btn">ЗАКАЗАТЬ РЕМОНТ</button>
       </div>
     </section>
     <section id="services" style="background-image: url('img/capture_bottom_bg.svg');">
       <div class="container">
         <h2 class="section_header">СПЕКТР УСЛУГ ПО РЕМОНТУ ЭЛЕКТРОСАМОКАТОВ</h2>
-        <div class="services_container">
-          <div class="services_ellipse_container"><img class="services_ellipse" src="img/ellipse.svg"/>
-            <ul class="servisces_list">
-              <li class="srvice_diagnostic">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Диагностика</span>
-              </li>
-              <li class="srvice_change_battary">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена неисправного аккумулятора</span>
-              </li>
-              <li class="srvice_change_controller">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт / замена контроллера</span>
-              </li>
-              <li class="srvice_change_buttons">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт / замена кнопок<br>управления</span>
-              </li>
-              <li class="srvice_change_display">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена дисплея</span>
-              </li>
-              <li class="srvice_energy">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Устранение проблем с зарядкой</span>
-              </li>
-              <li class="srvice_light">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Устранение неисправностей светооборудования</span>
-              </li>
-              <li class="srvice_repair_stop">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт переднего и заднего тормоза</span>
-              </li>
-              <li class="srvice_change_wheel">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена покрышек и камер</span>
-              </li>
-              <li class="srvice_repair_electronic">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт электропроводки</span>
-              </li>
-              <li class="srvice_change_bearing">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена подшипников</span>
-              </li>
-              <li class="srvice_luft">
-                <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Устранение рулевого люфта</span>
-              </li>
-            </ul>
-          </div><img class="services_img" src="img/services_samokat.png"/>
+      </div>
+      <div class="services_container">
+        <div class="services_ellipse_container"><img class="services_ellipse" src="img/ellipse.svg"/>
+          <ul class="servisces_list">
+            <li class="srvice_diagnostic">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Диагностика</span>
+            </li>
+            <li class="srvice_change_battary">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена неисправного аккумулятора</span>
+            </li>
+            <li class="srvice_change_controller">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт / замена контроллера</span>
+            </li>
+            <li class="srvice_change_buttons">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт / замена кнопок<br>управления</span>
+            </li>
+            <li class="srvice_change_display">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена дисплея</span>
+            </li>
+            <li class="srvice_energy">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Устранение проблем с зарядкой</span>
+            </li>
+            <li class="srvice_light">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Устранение неисправностей светооборудования</span>
+            </li>
+            <li class="srvice_repair_stop">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт переднего и заднего тормоза</span>
+            </li>
+            <li class="srvice_change_wheel">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена покрышек и камер</span>
+            </li>
+            <li class="srvice_repair_electronic">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Ремонт электропроводки</span>
+            </li>
+            <li class="srvice_change_bearing">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Замена подшипников</span>
+            </li>
+            <li class="srvice_luft">
+              <button class="feedback service_feddback_btn" style="background-image: url('img/icons/plus.svg');"></button><span>Устранение рулевого люфта</span>
+            </li>
+          </ul><img class="services_img" src="img/services_samokat.png"/>
         </div>
       </div>
     </section>
@@ -182,7 +177,7 @@
       <div class="container">
         <h2 class="section_header">КАТАЛОГ ЗАПЧАСТЕЙ ДЛЯ ЭЛЕКТРОСАМОКАТОВ</h2>
         <ul class="row catalog_items">
-          <li class="col-4 catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
+          <li class="col catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
             <h3 class="catalog_item_header">Заднее колесо</h3>
             <p class="catalog_item_description">Запасное заднее колесо для большинства моделей электросамокатов. Запчасть с высокими качественными показателями и стойкостью к износу. Возможна как самостоятельная установка, так и замена колеса в автосервисе.</p>
             <div class="catalog_item_container">
@@ -190,7 +185,7 @@
               <p class="price">76,50 <span>BYN</span></p>
             </div>
           </li>
-          <li class="col-4 catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
+          <li class="col catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
             <h3 class="catalog_item_header">Заднее колесо</h3>
             <p class="catalog_item_description">Запасное заднее колесо для большинства моделей электросамокатов. Запчасть с высокими качественными показателями и стойкостью к износу. Возможна как самостоятельная установка, так и замена колеса в автосервисе.</p>
             <div class="catalog_item_container">
@@ -198,7 +193,7 @@
               <p class="price">76,50 <span>BYN</span></p>
             </div>
           </li>
-          <li class="col-4 catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
+          <li class="col catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
             <h3 class="catalog_item_header">Заднее колесо</h3>
             <p class="catalog_item_description">Запасное заднее колесо для большинства моделей электросамокатов. Запчасть с высокими качественными показателями и стойкостью к износу. Возможна как самостоятельная установка, так и замена колеса в автосервисе.</p>
             <div class="catalog_item_container">
@@ -206,7 +201,7 @@
               <p class="price">76,50 <span>BYN</span></p>
             </div>
           </li>
-          <li class="col-4 catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
+          <li class="col catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
             <h3 class="catalog_item_header">Заднее колесо</h3>
             <p class="catalog_item_description">Запасное заднее колесо для большинства моделей электросамокатов. Запчасть с высокими качественными показателями и стойкостью к износу. Возможна как самостоятельная установка, так и замена колеса в автосервисе.</p>
             <div class="catalog_item_container">
@@ -214,7 +209,7 @@
               <p class="price">76,50 <span>BYN</span></p>
             </div>
           </li>
-          <li class="col-4 catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
+          <li class="col catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
             <h3 class="catalog_item_header">Заднее колесо</h3>
             <p class="catalog_item_description">Запасное заднее колесо для большинства моделей электросамокатов. Запчасть с высокими качественными показателями и стойкостью к износу. Возможна как самостоятельная установка, так и замена колеса в автосервисе.</p>
             <div class="catalog_item_container">
@@ -222,7 +217,7 @@
               <p class="price">76,50 <span>BYN</span></p>
             </div>
           </li>
-          <li class="col-4 catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
+          <li class="col catalog_item"><img class="catalog_item_img" src="img/catalog/catalog-1.png" alt="Заднее колесо"/>
             <h3 class="catalog_item_header">Заднее колесо</h3>
             <p class="catalog_item_description">Запасное заднее колесо для большинства моделей электросамокатов. Запчасть с высокими качественными показателями и стойкостью к износу. Возможна как самостоятельная установка, так и замена колеса в автосервисе.</p>
             <div class="catalog_item_container">
@@ -301,17 +296,18 @@
         </div>
         <div class="footer_images"><img class="footer_feedback_bg" src="img/footer_bottom_bg.svg"/><img class="image footer_feedback_img" src="img/footer_samokat.png"/></div>
       </div>
-    </section>
+    </section><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8ffed4174c32d99d8f26cfe5a7083045720bc58997e91665b89dc7fefe24b7f4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
     <footer>
       <div class="container">
         <div class="row logo_part">
-          <div class="col-6 logo_info">
-            <div class="logo"><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/>
+          <div class="logo_info">
+            <div class="logo"><img class="logo_img" src="img/icons/logo.svg" alt="Логотип"/></div>
+            <div class="logo_wrap">
               <p class="logo_text">iBolitTech.by</p>
+              <p class="logo_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
             </div>
-            <p class="logo_description">Ремонт и продажа запчастей для<br>электросамокатов в Минске</p>
           </div>
-          <div class="col-6 contacts">
+          <div class="contacts">
             <div class="phone"><a class="phone_number" href="tel:+375 29 333-33-33">+375 29 333-33-33</a>
               <p class="feedback">Перезвоним за 2 минуты</p>
             </div>
@@ -350,7 +346,17 @@
         <li><a href="#catalog">КАТАЛОГ ЗАПЧАСТЕЙ</a></li>
         <li><a href="#reviews">ОТЗЫВЫ</a></li>
       </ul>
-      <div class="privacy">Политика конфиденциальности</div><img class="modal_close_btn" src="img/icons/close.svg" alt="Закрыть" id="close_menu"/>
+      <div class="privacy">Политика конфиденциальности</div>
+      <div class="contacts">
+        <div class="phone"><a class="phone_number" href="tel:+375 29 333-33-33">+375 29 333-33-33</a>
+          <p class="feedback">Перезвоним за 2 минуты</p>
+        </div>
+        <ul class="messangers">
+          <li class="messanger"><a href="#"><img src="img/icons/whatsapp.svg" alt="whatsapp"/></a></li>
+          <li class="messanger"><a href="#"><img src="img/icons/viber.svg" alt="viber"/></a></li>
+          <li class="messanger"><a href="#"><img src="img/icons/telegram.svg" alt="telegram"/></a></li>
+        </ul>
+      </div><img class="modal_close_btn" src="img/icons/close.svg" alt="Закрыть" id="close_menu"/>
     </nav>
     <div class="modal" id="privacy_modal">
       <div class="privacy_text">
