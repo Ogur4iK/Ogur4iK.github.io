@@ -1,0 +1,1 @@
+var o;(o=jQuery)(window).on("load",function(){o(".scroll-container").mCustomScrollbar({axis:"y",theme:"custom-theme",scrollInertia:250})});
