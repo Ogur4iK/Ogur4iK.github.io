@@ -1,1 +1,1 @@
-var o;(o=jQuery)(window).on("load",function(){o(".scroll-container").mCustomScrollbar({axis:"y",theme:"custom-theme",scrollInertia:250})});
+var e;(e=jQuery)(window).on("load",function(){e(".scroll-container").mCustomScrollbar({axis:"y",theme:"custom-theme",scrollInertia:250})}),e(".before-after").twentytwenty(),new Glide(".slider",{type:"slider",swipeThreshold:!1,dragThreshold:!1,animationDuration:600}).mount();
