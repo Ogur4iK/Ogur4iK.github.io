@@ -11,32 +11,33 @@
   <body>
     <header id="header">
       <div class="container">
-        <div class="header-top"><img src="img/logo.svg" alt="Логотип"/>
-          <div class="menu-container">
-            <div class="contacts">
-              <p class="header-phone">8 (434) 33 34 235</p>
-              <div class="header-messangers"><img src="img/icons/viber.svg" alt="Viber"/><img src="img/icons/whatsapp.svg" alt="WhatsApp"/>
-                <p class="messangers-phone">8 (420) 33 34 235</p>
+        <div class="header-top"><img class="logo" src="img/logo.svg" alt="Логотип"/>
+          <div class="header-top-content">
+            <div class="menu-container">
+              <div class="contacts">
+                <p class="header-phone">8 (434) 33 34 235</p>
+                <div class="header-messangers"><img src="img/icons/viber.svg" alt="Viber"/><img src="img/icons/whatsapp.svg" alt="WhatsApp"/>
+                  <p class="messangers-phone">8 (420) 33 34 235</p>
+                </div>
+                <p class="adres">г. Железнодорожный, ул. Московская, д. 12 кв.2</p>
               </div>
-              <p class="adres">г. Железнодорожный, ул. Московская, д. 12 кв.2</p>
+              <nav>
+                <ul class="menu">
+                  <li><a href="#services">Услуги</a></li>
+                  <li><a href="#features">Преимущества</a></li>
+                  <li><a href="#after-before">До/После</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+                  <li><a href="#stock">Акции</a></li>
+                  <li><a href="#footer">Контакты</a></li>
+                </ul>
+              </nav>
             </div>
-            <nav>
-              <ul class="menu">
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Преимущества</a></li>
-                <li><a href="#">До/После</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="fbk-container">
-            <button class="dotted-btn">Онлайн запись</button><span class="dotted-txt">Заказать звонок</span>
-          </div>
+            <div class="fbk-container">
+              <button class="dotted-btn">Онлайн запись</button><span class="dotted-txt" data-modal="#feedback-modal">Заказать звонок</span>
+            </div>
+          </div><img class="burger" src="img/icons/burger.svg" alt="Меню"/><img class="close" src="img/icons/close.svg" alt="Закрыть"/>
         </div>
         <div class="header-content">
-          <div class="hdr-img-container"><img class="master-img" src="img/elena.jpg" alt="Курбак Елена"/></div>
           <div class="hdr-text-container">
             <h1 class="header-title">Частный косметолог</h1>
             <p class="master-name">Курбак Елена</p>
@@ -47,7 +48,10 @@
               <button class="dotted-btn">Подробнее об услугах</button>
             </div>
           </div>
-          <div class="play-container"><img src="img/play.svg" alt="Воспроизвести видео"/><span class="hdr-play-txt">Посмотреть видео обо мне</span></div><img class="lines l1" src="img/lines.svg"/><img class="lines l2" src="img/lines.svg"/>
+          <div class="hdr-imgs">
+            <div class="hdr-img-container"><img class="master-img" src="img/elena.jpg" alt="Курбак Елена"/></div>
+            <div class="play-container"><img src="img/play.svg" alt="Воспроизвести видео"/><span class="hdr-play-txt">Посмотреть видео обо мне</span></div>
+          </div><img class="lines l1" src="img/lines.svg"/><img class="lines l2" src="img/lines.svg"/>
         </div>
       </div>
     </header>
@@ -191,7 +195,7 @@
       <div class="container">
         <h2 class="section-title">Преимущества частного<br><span>косметолога перед салонами</span></h2>
         <p class="section-post-title">Меня зовут Елена, я косметолог-эстетист. Работаю в <br>космектологии более 18 лет. Специализируюсь на лечении <br>проблемной кожи лица, процедурах и пилингах.</p><img class="left-cream" src="img/features/ftre-left-cream.png"/><img class="right-triangle" src="img/features/ftre-triangle.svg"/>
-        <div class="fetures-imgs-container"><img class="top-cream" src="img/features/ftre-top-cream.png"/><img class="ftre-ellipse-bg" src="img/features/ftre-elipse-bg.svg"/><img class="center-cream" src="img/features/ftre-center-cream.png"/><img class="ptl6" src="img/features/feature-petals.png"/></div>
+        <div class="fetures-imgs-container"><img class="top-cream" src="img/features/ftre-top-cream.png"/><img class="ftre-ellipse-bg" src="img/features/ftre-elipse-bg.svg"/><img class="center-cream" src="img/features/ftre-center-cream.png"/><img class="petals ptl6" src="img/features/feature-petals.png"/></div>
         <div class="fetures-container">
           <div class="feature"><span class="ftre-nmbr">1.</span><img class="ftre-img" src="img/features/feature-1.svg" alt="Низкая стоимость"/>
             <div class="ftre-txt">
@@ -238,7 +242,7 @@
     <section id="after-before">
       <h2 class="section-title">Мне нравится делать <br><span>для вас красивее</span></h2>
       <p class="section-post-title">Основа моей работы — люди, здесь каждый индивидуален и неповторим. <br>Успех в любом деле строиться из увлеченности и любви к нему.</p>
-      <p class="section-post-title">За привычными для многих услугами, такими как окрашивание бровей или <br>пилинг для лица, стоит большой практический опыт и непрерывный <br>процесс обучения.</p><img class="ptl7" src="img/slider-petals.png"/>
+      <p class="section-post-title">За привычными для многих услугами, такими как окрашивание бровей или <br>пилинг для лица, стоит большой практический опыт и непрерывный <br>процесс обучения.</p><img class="petals ptl7" src="img/slider-petals.png"/>
       <div class="container sliders">
         <div class="sldr-bg-elipse"><img src="img/icons/slider-bg-ellipse.svg"/></div><img class="sldr-bg-lines" src="img/icons/slider-bg-lines.svg"/>
         <div class="slider">
@@ -293,8 +297,8 @@
     </section>
     <section id="reviews">
       <h2 class="section-title">Отзывы <span>клиентов</span></h2>
-      <p class="section-post-title">Любимое дело  - получать позитивные <br>реакции на процедуры.</p><img class="ptl8" src="img/reviews/phone-petals.png"/><img class="l3" src="img/srvice-elipse-lines.svg"/><img class="tools" src="img/reviews/tools.png"/>
-      <div class="reviews-container"><img class="phone-shadow" src="img/reviews/phone-shadow.png"/><img class="ptl9" src="img/reviews/phone-petals-2.png"/>
+      <p class="section-post-title">Любимое дело  - получать позитивные <br>реакции на процедуры.</p><img class="petals ptl8" src="img/reviews/phone-petals.png"/><img class="l3" src="img/srvice-elipse-lines.svg"/><img class="tools" src="img/reviews/tools.png"/>
+      <div class="reviews-container"><img class="phone-shadow" src="img/reviews/phone-shadow.png"/><img class="petals ptl9" src="img/reviews/phone-petals-2.png"/>
         <div class="reviews-sldr-container"><img class="phone-img" src="img/reviews/phone.png"/>
           <div class="phone-slider">
             <div class="glide__track" data-glide-el="track">
@@ -323,14 +327,15 @@
       <div class="container feedback-container">
         <h2 class="section-title">Свяжитесь со мной, <br><span>любым удобным способом</span></h2>
         <p class="section-post-title">Напиши мне в мессенджерах или соцсетя чтобы получить <br>польностью бесплтаную консультацию</p><img class="feedback-cosmetics" src="img/feedback/cosmetics.svg"/>
-        <div class="feedback-content"><img class="feedback-bazilik" src="img/feedback/feedback-bazilik.png"/><a class="fbk-messanger light-msngr" href="#"><img src="img/feedback/messangers/vk.svg"/>
-            <p>вконтакте</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/whatsapp.svg"/>
-            <p>whatsapp</p></a><a class="fbk-messanger light-msngr" href="#"><img src="img/feedback/messangers/telegram.svg"/>
-            <p>telegram</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/instagram.svg"/>
-            <p>instagram</p></a>
+        <div class="feedback-content">
+          <div class="fbk-messangers"><a class="fbk-messanger light-msngr" href="#"><img src="img/feedback/messangers/vk.svg"/>
+              <p>вконтакте</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/whatsapp.svg"/>
+              <p>whatsapp</p></a><a class="fbk-messanger light-msngr" href="#"><img src="img/feedback/messangers/telegram.svg"/>
+              <p>telegram</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/instagram.svg"/>
+              <p>instagram</p></a></div><img class="feedback-bazilik" src="img/feedback/feedback-bazilik.png"/>
           <button class="dotted-btn">Записаться на прием</button>
         </div>
-      </div><img class="feedback-bodegon" src="img/feedback/bodegon.png"/><img class="ptl10" src="img/feedback/feedback-petals.png"/>
+      </div><img class="feedback-bodegon" src="img/feedback/bodegon.png"/><img class="petals ptl10" src="img/feedback/feedback-petals.png"/>
     </section>
     <section id="certificates"><img class="legs" src="img/certificate/legs.png"/><img class="right-triangle" src="img/features/ftre-triangle.svg"/>
       <div class="container cert-container"><img class="mkup" src="img/icons/make-up.svg"/>
@@ -365,7 +370,7 @@
       </div>
     </section>
     <hr/>
-    <section id="stock"><img class="left-triangle" src="img/stock/left-triangle.svg"/><img class="ptl11" src="img/feedback/feedback-petals.png"/><img class="ptl12" src="img/feedback/feedback-petals.png"/><img class="lines l4" src="img/stock/right-lines.svg"/><img class="right-stock-cream" src="img/stock/right-cream.png"/>
+    <section id="stock"><img class="left-triangle" src="img/stock/left-triangle.svg"/><img class="petals ptl11" src="img/feedback/feedback-petals.png"/><img class="petals ptl12" src="img/feedback/feedback-petals.png"/><img class="lines l4" src="img/stock/right-lines.svg"/><img class="right-stock-cream" src="img/stock/right-cream.png"/>
       <div class="container">
         <h2 class="section-title">Мои акции <br><span>выгода для Вас!</span></h2>
         <p class="section-post-title">Следите за мной и вывсегда будете в плюсе</p>
@@ -374,37 +379,37 @@
           <li class="stock-itm">
             <div class="stock-itm-content" style="background-image: url('img/stock/stock-1.jpg');">
               <p class="stock-itm-txt">- 30% на каждую 5-ю процедуру</p>
-              <button class="stock-itm-btn">Оставить заявку</button>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
             </div>
           </li>
           <li class="stock-itm">
             <div class="stock-itm-content" style="background-image: url('img/stock/stock-2.jpg');">
               <p class="stock-itm-txt">- 20% на любую услугу новым клиентам</p>
-              <button class="stock-itm-btn">Оставить заявку</button>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
             </div>
           </li>
           <li class="stock-itm">
             <div class="stock-itm-content" style="background-image: url('img/stock/stock-3.jpg');">
               <p class="stock-itm-txt">- 15% при заказе окрашивания бровей и ресниц</p>
-              <button class="stock-itm-btn">Оставить заявку</button>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
             </div>
           </li>
           <li class="stock-itm">
             <div class="stock-itm-content" style="background-image: url('img/stock/stock-4.jpg');">
               <p class="stock-itm-txt fz20">Скидка на первую процедуру чистка + уход всего за 2000 р.</p>
-              <button class="stock-itm-btn">Оставить заявку</button>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
             </div>
           </li>
           <li class="stock-itm">
             <div class="stock-itm-content" style="background-image: url('img/stock/stock-5.jpg');">
               <p class="stock-itm-txt fz20">Приведу друга и получи скидку 15% на любую процедуру</p>
-              <button class="stock-itm-btn">Оставить заявку</button>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
             </div>
           </li>
           <li class="stock-itm">
             <div class="stock-itm-content" style="background-image: url('img/stock/stock-6.jpg');">
               <p class="stock-itm-txt fz20">При покупке курса массажа лица 1 массаж в подарок</p>
-              <button class="stock-itm-btn">Оставить заявку</button>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
             </div>
           </li>
         </ul>
@@ -419,7 +424,7 @@
         <li class="work-img"><img src="img/wrok-space/work-space-4.jpg" alt="Рабочее место"/></li>
       </ul>
     </section>
-    <footer id="footer"><img class="ptl13" src="img/feedback/feedback-petals.png"/>
+    <footer id="footer"><img class="petals ptl13" src="img/feedback/feedback-petals.png"/>
       <div class="container footer-container"><img class="footer-bg" src="img/footer-content-bg.png"/>
         <div class="footer-content">
           <h2 class="section-title footer-title">Свяжитесь со мной <br><span>любым удобным способом</span></h2>
@@ -460,13 +465,33 @@
 </defs>
 </svg></a></div>
         </div>
-        <div class="footer-map-wrap"></div>
+        <div class="footer-map-wrap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d0f66be42f80ed7bbd5aef78394f72a9a196b14ab1428a6ab5b192f90e7bbe9&amp;lang=ru_RU&amp;scroll=false"></script></div>
       </div>
     </footer>
+    <div class="modal" id="feedback-modal">
+      <div class="section-title">Запись <span>на прием</span></div>
+      <form class="feedback-form">
+        <input type="text" placeholder="Введите имя"/>
+        <input type="text" placeholder="Введите телефон"/>
+        <input type="text" placeholder="Выберите дату посещения"/>
+        <input class="fill-btn" type="submit" value="Отправить заявку"/>
+      </form>
+      <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
+    </div>
+    <div class="modal" id="stock-modal">
+      <div class="section-title">Оставить заявку <span>на акцию</span></div>
+      <form class="feedback-form">
+        <input type="text" placeholder="Введите имя"/>
+        <input type="text" placeholder="Введите телефон"/>
+        <input class="fill-btn" type="submit" value="Отправить заявку"/>
+      </form>
+      <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
+    </div>
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="js/jquery.event.move.js"></script>
     <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
     <script type="text/javascript" src="js/glide.min.js"></script>
+    <script type="text/javascript" src="js/iziModal.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
