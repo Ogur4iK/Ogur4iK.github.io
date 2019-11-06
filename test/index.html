@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+    <title>Косметика</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="header-top"><img class="logo" src="img/logo.svg" alt="Логотип"/>
+          <div class="header-top-content">
+            <div class="menu-container">
+              <div class="contacts">
+                <p class="header-phone">8 (434) 33 34 235</p>
+                <div class="header-messangers"><img src="img/icons/viber.svg" alt="Viber"/><img src="img/icons/whatsapp.svg" alt="WhatsApp"/>
+                  <p class="messangers-phone">8 (420) 33 34 235</p>
+                </div>
+                <p class="adres">г. Железнодорожный, ул. Московская, д. 12 кв.2</p>
+              </div>
+              <nav>
+                <ul class="menu">
+                  <li><a href="#services">Услуги</a></li>
+                  <li><a href="#features">Преимущества</a></li>
+                  <li><a href="#after-before">До/После</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+                  <li><a href="#stock">Акции</a></li>
+                  <li><a href="#footer">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="fbk-container">
+              <button class="dotted-btn" data-modal="#feedback-modal">Онлайн запись</button><span class="dotted-txt" data-modal="#feedback-modal">Заказать звонок</span>
+            </div>
+          </div><img class="burger" src="img/icons/burger.svg" alt="Меню"/><img class="close" src="img/icons/close.svg" alt="Закрыть"/>
+        </div>
+        <div class="header-content">
+          <div class="hdr-text-container">
+            <h1 class="header-title">Частный косметолог</h1>
+            <p class="master-name">Курбак Елена</p>
+            <p class="header-text">Меня зовут Елена, я косметолог-эстетист. Работаю в космектологии более 18 лет. Специализируюсь на лечении проблемной кожи лица, процедурах и пилингах. Имею множество сертификатов и дипломов, подтверждающих мою компектенцию.</p>
+            <p class="header-text">Очень важно, чтобы процедуры проходили в уютной, спокойной обстановке, в дружеской атмосфере. Поэтому рада видеть Вас у себя. Для каждого клиента мы разрабатываем индивидуальную программу, проводим процедуры и подбираем индивидуальные средства ухода. Я буду рада новым знакомствам.</p>
+            <div class="hdr-buttons">
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
+              <button class="dotted-btn">Подробнее об услугах</button>
+            </div>
+          </div>
+          <div class="hdr-imgs">
+            <div class="hdr-img-container"><img class="master-img" src="img/elena.jpg" alt="Курбак Елена"/></div>
+            <div class="play-container"><img src="img/play.svg" alt="Воспроизвести видео"/><span class="hdr-play-txt">Посмотреть видео обо мне</span></div>
+          </div><img class="lines l1" src="img/lines.svg" data-stellar-ratio="0.5"/><img class="lines l2" src="img/lines.svg" data-stellar-ratio="0.8"/>
+        </div>
+      </div>
+    </header>
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Услуги которые<br><span>оказываю для вас</span></h2>
+        <p class="section-post-title">Выберите направление или посмотрите все</p>
+        <div class="tabs">
+          <button class="tab">все услуги</button>
+          <button class="tab active-tab">уход за кожей</button>
+          <button class="tab">профилактика против старения</button>
+          <button class="tab">эпиляция</button>
+          <button class="tab">пилинги фруктовыми кислотами</button>
+        </div>
+        <div class="services-container">
+          <div class="service"><img class="petals ptl1" src="img/petals.png" data-stellar-ratio="0.75"/>
+            <div class="service-content">
+              <h3 class="service-title">Чистка лица при помощи <br><span>ультразвукового аппарата (УЗ)<span></h3>
+              <p class="service-desc">Это аппаратное очищение, которое осуществляется с помощью ультразвуковы волн высокой частоты. Ультразвук - один из самых современных и безболезненных способов очистить кожный покров. Процедуру проводит спецмалист прибором скрабером. При такой чистке не требуется распаривание. По окончании сеанса кожа выглядит свежо и молодо. Кожа не повреждается, комендоны под действием УЗ выбиваются на поверхность, воздействие на кожу происходит менее интенисвно, чем при мануальной чистке, но есть недостаток - более глубокие поры невозможно очистить:</p>
+              <ul class="price-list">
+                <li class="price-lst-itm">чистка ультразвуковая (УЗ) от <span>1500 р.</span></li>
+                <li class="price-lst-itm">массаж лечебный <span>250 р.</span></li>
+                <li class="price-lst-itm">маска поросужевающая, увлажняющая, питательная от <span>500 р.</span></li>
+                <li class="price-lst-itm">завершающий креп по типу кожи</li>
+              </ul>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
+            </div>
+            <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg srvbg1" src="img/service-bg.svg"/><img class="service-lines svl1" src="img/srvice-elipse-lines.svg"/><img class="service-img svimg1" src="img/services/service-1.png" alt="Чистка лица при помощи ультразвукового аппарата (УЗ)"/></div>
+          </div>
+          <div class="service">
+            <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg" src="img/service-bg.svg"/><img class="service-lines svl2" src="img/srvice-lines.svg"/><img class="service-img svimg2" src="img/services/service-2.png" alt="Чистка лица"/></div>
+            <div class="service-content"><img class="petals ptl2" src="img/petals.png" data-stellar-ratio="0.8"/>
+              <h3 class="service-title">Чистка лица <br><span>Гигиеническая чистка лица мануальная — <br>эффективное средство для красоты кожи.<span></h3>
+              <p class="service-desc">Ручная чистка проводится в тех случаях, когда необходимо глубокое очищение лица, но при этом Ультразвуковая чистка справиться не может.</p>
+              <div class="service-wrap">
+                <p class="price-lst-title">Данная процедура показана при:</p>
+                <ul class="price-list">
+                  <li class="price-lst-itm">Черных точках (комедонах)</li>
+                  <li class="price-lst-itm">Сильно загрязненной коже</li>
+                  <li class="price-lst-itm">Угревой болезни без воспалений</li>
+                </ul>
+                <p class="price-lst-title">Ручную чистку нельзя проводить при:</p>
+                <ul class="price-list">
+                  <li class="price-lst-itm">Восполительны заболеваниях кожи (в том числе <br>из-за вирусных заболеваний)</li>
+                  <li class="price-lst-itm">Угревой болезни в тяжелой степени</li>
+                  <li class="price-lst-itm">Демодексе (поражение кожного покрова клещем Demodex)</li>
+                  <li class="price-lst-itm">Расширенных сосудах лица</li>
+                  <li class="price-lst-itm">Наличии гнойников или герпесе</li>
+                  <li class="price-lst-itm">Склонности к аллергическим реакциям</li>
+                </ul>
+                <p class="price-list">
+                  1. Чистка лица мануальная (очищение,экстракция комедонов) - от <span>2000 р.</span><br>
+                  2. Лечебный массаж после чистки - <span>250 р.</span><br>
+                  3.  Д'Арсонваль  (обработка аппаратом после чистки) - <span>300 р.</span><br>
+                  4. Маска для лица антисептечиеская, противовоспалительная,<br>
+                  успокаивающая - от <span>500 р.</span><br>
+                  5. Завершающий креп после чистки лица по типу кожи - <span>200 р.</span>
+                </p>
+                <button class="dotted-btn" data-modal="#feedback-modal">Записаться на прием</button>
+              </div>
+            </div>
+          </div>
+          <div class="service"><img class="petals ptl3" src="img/petals.png" data-stellar-ratio="0.75"/>
+            <div class="service-content">
+              <h3 class="service-title">Чистка спины мануальная<br><span>Очищение при помощи ложечки УНО или руками.<span></h3>
+              <div class="scroll-container">
+                <ul class="price-list">
+                  <li class="price-lst-itm">чистка ультразвуковая (УЗ) от <span>1500 р.</span></li>
+                  <li class="price-lst-itm">массаж лечебный <span>250 р.</span></li>
+                  <li class="price-lst-itm">маска поросужевающая, увлажняющая, питательная от <span>500 р.</span></li>
+                  <li class="price-lst-itm">завершающий креп по типу кожи</li>
+                </ul>
+                <p class="price-lst-title">Ручную чистку нельзя проводить при:</p>
+                <p class="service-desc">Это аппаратное очищение, которое осуществляется с помощью ультразвуковы волн высокой частоты. Ультразвук - один из самых современных и безболезненных способов очистить кожный покров. Процедуру проводит спецмалист прибором скрабером. При такой чистке не требуется распаривание. По окончании сеанса кожа выглядит свежо и молодо. Кожа не повреждается, комендоны под действием УЗ выбиваются на поверхность, воздействие на кожу происходит менее интенисвно, чем при мануальной чистке, но есть недостаток - более глубокие поры невозможно очистить. Это аппаратное очищение, которое осуществляется с помощью ультразвуковы волн высокой частоты. Ультразвук - один из самых современных и безболезненных способов очистить кожный покров. Процедуру проводит спецмалист прибором скрабером. При такой чистке не требуется распаривание. По окончании сеанса кожа выглядит свежо и молодо. Кожа не повреждается, комендоны под действием УЗ выбиваются на поверхность, воздействие на кожу происходит менее интенисвно, чем при мануальной чистке, но есть недостаток - более глубокие поры невозможно очистить.</p>
+              </div>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
+            </div>
+            <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg srvbg1" src="img/service-bg.svg"/><img class="service-lines svl1" src="img/srvice-elipse-lines.svg"/><img class="service-lines svl3" src="img/srvice-elipse-lines.svg"/><img class="service-img svimg3" src="img/services/service-3.png" alt="Чистка спины мануальная"/></div>
+          </div>
+          <div class="service">
+            <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg" src="img/service-bg.svg"/><img class="service-lines svl4" src="img/srvice-lines.svg"/><img class="service-img svimg2" src="img/services/service-4.png" alt="Эпиляция холодным воском, горячим, шугаринг"/></div>
+            <div class="service-content pl-125"><img class="petals ptl2" src="img/petals.png" data-stellar-ratio="0.85"/>
+              <h3 class="service-title lh-40">Эпиляция холодным воском, <br>горячим, шугаринг</h3>
+              <ul class="price-list">
+                <li class="price-lst-itm">Голень - от <span>500 р.</span></li>
+                <li class="price-lst-itm">Бедра - от <span>600 р.</span></li>
+                <li class="price-lst-itm">Подмышки - от <span>400 р.</span></li>
+                <li class="price-lst-itm">Руки - от <span>500 р.</span></li>
+                <li class="price-lst-itm">Бикини - от <span>1000 р.</span></li>
+                <li class="price-lst-itm">Над верней губой - от <span>200 р.</span></li>
+              </ul>
+              <p class="price-lst-title">Брови</p>
+              <p class="price-list">Окрашивание бровей краской -  <span>500 р.</span>, окршивание бровей хной - <span>650 р.</span>, оформление бровей - <span>400 р.</span></p>
+              <p class="price-lst-title">Уход за руками</p>
+              <p class="price-list">Массаж рук -  <span>350 р.</span><br>Парафиновая маска для рук -  <span>400 р.</span></p>
+              <button class="dotted-btn" data-modal="#feedback-modal">Записаться на прием</button>
+            </div>
+          </div>
+          <div class="service"><img class="petals ptl5" src="img/petals.png" data-stellar-ratio="0.8"/>
+            <div class="service-content">
+              <h3 class="service-title">Поверхностные пилинги</h3>
+              <div class="scroll-container">
+                <p class="service-desc">Когда кожа становится тусклой, не ровной, утрачивается блеск и сияние, на помощь приходит пилинг, самый простой и эффективный способ привести лицо в порядок, чтобы появился естественый цвет, выровнялась кожа, осветилась, засияла и появилась уверенность в себе.</p>
+                <ul class="price-list bold-price-lst">
+                  <li class="price-lst-itm">Пилинг отшелушивающий омертвевшие клетки</li>
+                  <li class="price-lst-itm">Разглаживает морщины</li>
+                  <li class="price-lst-itm">Уменьшает пигментацию</li>
+                </ul>
+                <p class="service-desc">Во время поверхностного пилинга связи между омертвевшими роговыми чешуйками под воздействием кислот растворяются. На коже появляется легкое шелушение после пилинги.</p>
+                <ul class="price-list bold-price-lst">
+                  <li class="price-lst-itm">Выравнивается тон и текстура кожи</li>
+                  <li class="price-lst-itm">Минимизируется видимость пор</li>
+                  <li class="price-lst-itm">Уменьшаются следы постакне</li>
+                  <li class="price-lst-itm">Идет подготовка эпидермиса к более серьезным<br>космектологически процедурам</li>
+                </ul>
+                <p class="service-desc">Обычно курс пилинга состовляет 5-7 процедур с ....</p>
+              </div>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
+            </div>
+            <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg srvbg1" src="img/service-bg.svg"/><img class="service-lines svl1" src="img/srvice-elipse-lines.svg"/><img class="service-lines svl3" src="img/srvice-elipse-lines.svg"/><img class="service-img svimg3" src="img/services/service-5.png" alt="Поверхностные пилинги"/></div>
+          </div>
+          <div class="service">
+            <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg" src="img/service-bg.svg"/><img class="service-lines svl4" src="img/srvice-lines.svg"/><img class="service-img svimg2" src="img/services/service-6.png" alt="Уходовые процедуры за лицом, шеей, декольте"/></div>
+            <div class="service-content pl-80">
+              <h3 class="service-title lh-40 ml-50">Уходовые процедуры за лицом, <br>шеей, декольте</h3>
+              <div class="scroll-container">
+                <p class="service-desc">
+                  С годами эпидермис истощается, и контур лица теряет четкие очертания. Процесс еще больше углубляется под воздействием гормонлаьных изменений в организме и избытком окисляющих факторов : стресса, ультрафиолетового излучения, вредных привычек. Моя задача – помочь сохранить естетственную, здоровую внешность, убрать нежелательную пигментацию и продлить молодость. На помощь приходят профессиональные уходовые процедуры. 
+                  Профессиональный уход в косметологическом кабинете позволяет воздействовать не только на кожные покровы, но и на мышечный каркас лица, шеи, декольте, которому уделяется особое внимание. 
+                  Под массажный крем часто наносят сыворотки и концентраты для усиления эффекта. В уходовую процедуру часто включается УЧ чистка лица, микротоки. Обязательным этапов уходовой процедуры является нанесения маски. Маски бывают разные как по форме – кремовые, пастообразные, альгинатные, биоцеллюлозные, так и по эффекту, который необходим – увлажняющие, питательные, отбеливающие,
+                </p>
+              </div>
+              <button class="dotted-btn ml-50" data-modal="#feedback-modal">Записаться на прием</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
+    <section id="features">
+      <div class="container">
+        <h2 class="section-title">Преимущества частного<br><span>косметолога перед салонами</span></h2>
+        <p class="section-post-title">Меня зовут Елена, я косметолог-эстетист. Работаю в <br>космектологии более 18 лет. Специализируюсь на лечении <br>проблемной кожи лица, процедурах и пилингах.</p><img class="left-cream" src="img/features/ftre-left-cream.png" data-stellar-ratio="1.2"/><img class="right-triangle" src="img/features/ftre-triangle.svg" data-stellar-ratio="0.7"/>
+        <div class="fetures-imgs-container"><img class="top-cream" src="img/features/ftre-top-cream.png" data-stellar-ratio="0.75"/><img class="ftre-ellipse-bg" src="img/features/ftre-elipse-bg.svg"/><img class="center-cream" src="img/features/ftre-center-cream.png"/><img class="petals ptl6" src="img/features/feature-petals.png" data-stellar-ratio="0.85"/></div>
+        <div class="fetures-container">
+          <div class="feature"><span class="ftre-nmbr">1.</span><img class="ftre-img" src="img/features/feature-1.svg" alt="Низкая стоимость"/>
+            <div class="ftre-txt">
+              <h3 class="ftre-title">Низкая стоимость услуг</h3>
+              <p class="ftre-desc">Зарплаты, налоги, аренда, дорогой ремонт и реклама влекут огромые расходы. И за все это в итоге платит клиент. Стоит ли переплачивать в 2-3 раза красивую витрину?</p>
+            </div>
+          </div>
+          <div class="feature"><span class="ftre-nmbr">2.</span><img class="ftre-img" src="img/features/feature-2.svg" alt="Реальное качество услуг"/>
+            <div class="ftre-txt">
+              <h3 class="ftre-title">Реальное качество услуг</h3>
+              <p class="ftre-desc">Косметолог не может быть безответственным. <br>Он наодится лицом к лицу с клиентом и репутация это все. Многие клиенты предпочитают доверять одному и тому же человеку, на котором лежит вся ответственность. </p>
+            </div>
+          </div>
+          <div class="feature"><span class="ftre-nmbr">3.</span><img class="ftre-img" src="img/features/feature-3.svg" alt="Качество оборудования и материалов"/>
+            <div class="ftre-txt">
+              <h3 class="ftre-title">Качество оборудования <br>и материалов</h3>
+              <p class="ftre-desc">Цены, косметики в клинике в разы дороже. Частный косметолог покупает проверенную косметику, но при этом практически не несет косвенных расходов. В результате цена на один и тот же препарат может отличаться на 50-70%.</p>
+            </div>
+          </div>
+          <div class="feature"><span class="ftre-nmbr">4.</span><img class="ftre-img" src="img/features/feature-4.svg" alt="Личный контакт"/>
+            <div class="ftre-txt">
+              <h3 class="ftre-title">Личный контакт</h3>
+              <p class="ftre-desc">Частный косметолог становиться другом для клиента. Он работает с клиентами много лет, знает все особенности и может лучше решить проблему, подобрать препарат или посоветовать процедуру.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="capture-form">
+      <div class="container capture-container"><img class="capture-img" src="img/capture-img.png" alt="Визитка"/>
+        <div class="capture-content">
+          <div class="service-title">Запишитесь на любую из процедур <br>и получите <span>скидку 30%!</span></div>
+          <p class="capture-txt">Оставьте свой номер и мы свяжемся с вами в ближайшее время!</p>
+          <form class="capture-form">
+            <input type="text" name="phone" placeholder="Ваш телефон"/>
+            <input class="fill-btn" type="submit" value="Записаться на прием"/>
+          </form>
+          <div class="capture-desc"> <img src="img/icons/lock.svg"/>
+            <p>Нажимая на кнопку получить подарок вы соглашаетесь с политикой обработки данных</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="after-before">
+      <h2 class="section-title">Мне нравится делать <br><span>для вас красивее</span></h2>
+      <p class="section-post-title">Основа моей работы — люди, здесь каждый индивидуален и неповторим. <br>Успех в любом деле строиться из увлеченности и любви к нему.</p>
+      <p class="section-post-title">За привычными для многих услугами, такими как окрашивание бровей или <br>пилинг для лица, стоит большой практический опыт и непрерывный <br>процесс обучения.</p><img class="petals ptl7" src="img/slider-petals.png" data-stellar-ratio="0.85"/>
+      <div class="container sliders">
+        <div class="sldr-bg-elipse"><img src="img/icons/slider-bg-ellipse.svg"/></div><img class="sldr-bg-lines" src="img/icons/slider-bg-lines.svg"/>
+        <div class="slider">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="slide-container">
+                  <div class="slide-content">
+                    <div class="slide-title">Гигиеническая чистка лица</div>
+                    <div class="slide-text">Основа моей работы — люди, здесь каждый индивидуален и неповторим. Успех в любом деле строиться из увлеченности и любви к нему.</div>
+                    <div class="slide-text">За привычными для многих услугами, такими как окрашивание бровей или пилинг для лица, стоит большой практический опыт и непрерывный процесс обучения, общение с экспертами индустрии и поиск новых, совершенных формул.</div>
+                    <div class="slide-ps">Представлены примеры только тех, кто дал свое разрешение *</div>
+                  </div>
+                  <div class="before-after"><img src="img/before/before.jpg"/><img src="img/before/after.jpg"/></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide-container">
+                  <div class="slide-content">
+                    <div class="slide-title">Гигиеническая чистка лица</div>
+                    <div class="slide-text">Основа моей работы — люди, здесь каждый индивидуален и неповторим. Успех в любом деле строиться из увлеченности и любви к нему.</div>
+                    <div class="slide-text">За привычными для многих услугами, такими как окрашивание бровей или пилинг для лица, стоит большой практический опыт и непрерывный процесс обучения, общение с экспертами индустрии и поиск новых, совершенных формул.</div>
+                    <div class="slide-ps">Представлены примеры только тех, кто дал свое разрешение *</div>
+                  </div>
+                  <div class="before-after"><img src="img/before/before.jpg"/><img src="img/before/after.jpg"/></div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="slide-container">
+                  <div class="slide-content">
+                    <div class="slide-title">Гигиеническая чистка лица</div>
+                    <div class="slide-text">Основа моей работы — люди, здесь каждый индивидуален и неповторим. Успех в любом деле строиться из увлеченности и любви к нему.</div>
+                    <div class="slide-text">За привычными для многих услугами, такими как окрашивание бровей или пилинг для лица, стоит большой практический опыт и непрерывный процесс обучения, общение с экспертами индустрии и поиск новых, совершенных формул.</div>
+                    <div class="slide-ps">Представлены примеры только тех, кто дал свое разрешение *</div>
+                  </div>
+                  <div class="before-after"><img src="img/before/before.jpg"/><img src="img/before/after.jpg"/></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"><img src="img/icons/slider-arrow.svg" alt="Предыдущий слайд"/></button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"><img src="img/icons/slider-arrow.svg" alt="Следующий слайд"/></button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reviews">
+      <h2 class="section-title">Отзывы <span>клиентов</span></h2>
+      <p class="section-post-title">Любимое дело  - получать позитивные <br>реакции на процедуры.</p><img class="petals ptl8" src="img/reviews/phone-petals.png" data-stellar-ratio="1.05"/><img class="l3" src="img/srvice-elipse-lines.svg"/><img class="tools" src="img/reviews/tools.png" data-stellar-ratio="0.85"/>
+      <div class="reviews-container"><img class="phone-shadow" src="img/reviews/phone-shadow.png"/><img class="petals ptl9" src="img/reviews/phone-petals-2.png" data-stellar-ratio="0.8"/>
+        <div class="reviews-sldr-container"><img class="phone-img" src="img/reviews/phone.png"/>
+          <div class="phone-slider">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="review-img-wrap"><img src="img/reviews/review.jpg"/></div>
+                </li>
+                <li class="glide__slide">
+                  <div class="review-img-wrap"><img src="img/reviews/review.jpg"/></div>
+                </li>
+                <li class="glide__slide">
+                  <div class="review-img-wrap"><img src="img/reviews/review.jpg"/></div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"><img src="img/icons/slider-arrow.svg" alt="Предыдущий слайд"/></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"><img src="img/icons/slider-arrow.svg" alt="Следующий слайд"/></button>
+            </div>
+          </div>
+          <div class="phone-sldr-counter"><span class="current-sldr"></span><span class="slash-sldr">/</span><span class="all-sldr"> </span></div>
+        </div>
+      </div>
+    </section>
+    <section id="feedback">
+      <div class="container feedback-container">
+        <h2 class="section-title">Свяжитесь со мной, <br><span>любым удобным способом</span></h2>
+        <p class="section-post-title">Напиши мне в мессенджерах или соцсетя чтобы получить <br>польностью бесплтаную консультацию</p><img class="feedback-cosmetics" src="img/feedback/cosmetics.svg" data-stellar-ratio="1.1"/>
+        <div class="feedback-content">
+          <div class="fbk-messangers"><a class="fbk-messanger light-msngr" href="#"><img src="img/feedback/messangers/vk.svg"/>
+              <p>вконтакте</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/whatsapp.svg"/>
+              <p>whatsapp</p></a><a class="fbk-messanger light-msngr" href="#"><img src="img/feedback/messangers/telegram.svg"/>
+              <p>telegram</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/instagram.svg"/>
+              <p>instagram</p></a></div><img class="feedback-bazilik" src="img/feedback/feedback-bazilik.png"/>
+        </div>
+        <button class="dotted-btn" data-modal="#feedback-modal">Записаться на прием</button>
+      </div><img class="feedback-bodegon" src="img/feedback/bodegon.png" data-stellar-ratio="1.1"/><img class="petals ptl10" src="img/feedback/feedback-petals.png" data-stellar-ratio="0.9"/>
+    </section>
+    <section id="certificates"><img class="legs" src="img/certificate/legs.png"/><img class="right-triangle" src="img/features/ftre-triangle.svg"/>
+      <div class="container cert-container"><img class="mkup" src="img/icons/make-up.svg"/>
+        <div class="sldr-bg-elipse cert-bg-elipse"><img src="img/icons/slider-bg-ellipse.svg"/></div>
+        <div class="cert-sldr-container">
+          <div class="cert-slider">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="cert-wrap"><img class="cert-img" src="img/certificate/certificate.jpg" alt="Сертификат"/><img class="cert-border" src="img/certificate/border.png"/></div>
+                </li>
+                <li class="glide__slide">
+                  <div class="cert-wrap"><img class="cert-img" src="img/certificate/certificate.jpg" alt="Сертификат"/><img class="cert-border" src="img/certificate/border.png"/></div>
+                </li>
+                <li class="glide__slide">
+                  <div class="cert-wrap"><img class="cert-img" src="img/certificate/certificate.jpg" alt="Сертификат"/><img class="cert-border" src="img/certificate/border.png"/></div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"><img src="img/icons/slider-arrow.svg" alt="Предыдущий слайд"/></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"><img src="img/icons/slider-arrow.svg" alt="Следующий слайд"/></button>
+            </div>
+            <div class="cert-sldr-counter"><span class="current-sldr"></span><span class="slash-sldr">/</span><span class="all-sldr"> </span></div>
+          </div>
+        </div>
+        <div class="cert-content">
+          <h2 class="section-title">Мне нравиться делать <br><span>для вас красивее</span></h2>
+          <p class="section-post-title">Моими клиентами являются юноши и девушки, мужчины и женщины все возрастов, которые хотят иметь подтянутый овал лица, чистую и гладкую кожу, ухоженый внешний вид.</p>
+          <p class="section-post-title">Многие мои клиенты пришли ко мне еще подростками с различными проблемами: тусклой, не ровной, воспалённое кожей лица, спины. Сейчас они уже взрослые люди, преподают в престижных ВУЗАХ страны, работают на руководящих должностях в государственных структурах и так далее. У многих семьи дети. Они красивы, ухожены, успешны и довольны собой. Я рада, что нам удалось сохранить добрые отношения все эти годы и я с удовольствием помогаю им поддерживать красоту и свежесть, помогаю правильно выбрать и использовать косметические средства.</p>
+        </div>
+      </div>
+    </section>
+    <hr/>
+    <section id="stock"><img class="left-triangle" src="img/stock/left-triangle.svg"/><img class="petals ptl11" src="img/feedback/feedback-petals.png" data-stellar-ratio="0.85"/><img class="petals ptl12" src="img/feedback/feedback-petals.png" data-stellar-ratio="0.75"/><img class="lines l4" src="img/stock/right-lines.svg"/><img class="right-stock-cream" src="img/stock/right-cream.png"/>
+      <div class="container">
+        <h2 class="section-title">Мои акции <br><span>выгода для Вас!</span></h2>
+        <p class="section-post-title">Следите за мной и вывсегда будете в плюсе</p>
+        <div class="sldr-bg-elipse stock-bg-elipse" data-stellar-ratio="1.1"><img src="img/icons/slider-bg-ellipse.svg"/></div><img class="title-cream" src="img/stock/title-cream.png" data-stellar-ratio="1.1"/>
+        <ul class="stocks">
+          <li class="stock-itm">
+            <div class="stock-itm-content" style="background-image: url('img/stock/stock-1.jpg');">
+              <p class="stock-itm-txt">- 30% на каждую 5-ю процедуру</p>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
+            </div>
+          </li>
+          <li class="stock-itm">
+            <div class="stock-itm-content" style="background-image: url('img/stock/stock-2.jpg');">
+              <p class="stock-itm-txt">- 20% на любую услугу новым клиентам</p>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
+            </div>
+          </li>
+          <li class="stock-itm">
+            <div class="stock-itm-content" style="background-image: url('img/stock/stock-3.jpg');">
+              <p class="stock-itm-txt">- 15% при заказе окрашивания бровей и ресниц</p>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
+            </div>
+          </li>
+          <li class="stock-itm">
+            <div class="stock-itm-content" style="background-image: url('img/stock/stock-4.jpg');">
+              <p class="stock-itm-txt fz20">Скидка на первую процедуру чистка + уход всего за 2000 р.</p>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
+            </div>
+          </li>
+          <li class="stock-itm">
+            <div class="stock-itm-content" style="background-image: url('img/stock/stock-5.jpg');">
+              <p class="stock-itm-txt fz20">Приведу друга и получи скидку 15% на любую процедуру</p>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
+            </div>
+          </li>
+          <li class="stock-itm">
+            <div class="stock-itm-content" style="background-image: url('img/stock/stock-6.jpg');">
+              <p class="stock-itm-txt fz20">При покупке курса массажа лица 1 массаж в подарок</p>
+              <button class="stock-itm-btn" data-modal="#stock-modal">Оставить заявку</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container" id="work-place">
+      <h2 class="section-title">Мое рабочее <span>пространство</span></h2>
+      <ul class="work-imgs">
+        <li class="work-img"><img src="img/wrok-space/work-space-1.jpg" alt="Рабочее место"/></li>
+        <li class="work-img"><img src="img/wrok-space/work-space-2.jpg" alt="Рабочее место"/></li>
+        <li class="work-img"><img src="img/wrok-space/work-space-3.jpg" alt="Рабочее место"/></li>
+        <li class="work-img"><img src="img/wrok-space/work-space-4.jpg" alt="Рабочее место"/></li>
+      </ul>
+    </section>
+    <footer id="footer"><img class="petals ptl13" src="img/feedback/feedback-petals.png" data-stellar-ratio="0.85"/>
+      <div class="container footer-container"><img class="footer-bg" src="img/footer-content-bg.png" data-stellar-ratio="0.9"/>
+        <div class="footer-content">
+          <h2 class="section-title footer-title">Свяжитесь со мной <br><span>любым удобным способом</span></h2>
+          <h3 class="footer-subtitle">Адрес:</h3>
+          <p class="footer-txt">Московская обл., г.Серпухов <br>офис Водонапорная 36 офис 103</p>
+          <h3 class="footer-subtitle">Телефон:</h3>
+          <p class="footer-txt">8 (496) 775 81 00</p>
+          <h3 class="footer-subtitle">Почта:</h3>
+          <p class="footer-txt">kosmetolog@gmail.com</p>
+          <div class="footer-messangers"><a class="footer-messanger" href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M11.2494 0.00360928L9.30422 0.000488281C7.11892 0.000488281 5.70668 1.44941 5.70668 3.69201V5.39405H3.75092C3.58192 5.39405 3.44507 5.53106 3.44507 5.70006V8.16612C3.44507 8.33512 3.58208 8.47198 3.75092 8.47198H5.70668V14.6946C5.70668 14.8636 5.84353 15.0005 6.01254 15.0005H8.56424C8.73324 15.0005 8.8701 14.8635 8.8701 14.6946V8.47198H11.1568C11.3258 8.47198 11.4627 8.33512 11.4627 8.16612L11.4636 5.70006C11.4636 5.61891 11.4313 5.5412 11.3741 5.48378C11.3168 5.42635 11.2388 5.39405 11.1576 5.39405H8.8701V3.95121C8.8701 3.25772 9.03535 2.90567 9.93872 2.90567L11.2491 2.9052C11.4179 2.9052 11.5548 2.76819 11.5548 2.59935V0.309467C11.5548 0.140777 11.4181 0.00392138 11.2494 0.00360928Z" fill="#FA5894"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="15" height="15" fill="white" transform="translate(0 0.000488281)"/>
+</clipPath>
+</defs>
+</svg></a><a class="footer-messanger" href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M14.9205 10.9507C14.9023 10.9115 14.8854 10.879 14.8697 10.853C14.6094 10.3843 14.1121 9.80899 13.378 9.12691L13.3625 9.11129L13.3547 9.10363L13.3468 9.09578H13.339C13.0058 8.77817 12.7948 8.56461 12.7064 8.45528C12.5448 8.247 12.5086 8.03618 12.5969 7.82257C12.6593 7.66118 12.8938 7.32034 13.2998 6.7996C13.5134 6.52362 13.6825 6.30243 13.8074 6.13579C14.7082 4.93821 15.0988 4.17295 14.9789 3.83969L14.9324 3.76181C14.9011 3.71492 14.8204 3.67203 14.6904 3.63292C14.5601 3.59388 14.3936 3.58743 14.1904 3.61344L11.9413 3.62898C11.9048 3.61606 11.8528 3.61727 11.785 3.63292C11.7173 3.64856 11.6834 3.65641 11.6834 3.65641L11.6443 3.67597L11.6132 3.69947C11.5872 3.71501 11.5585 3.74233 11.5273 3.7814C11.4962 3.82032 11.4702 3.866 11.4494 3.91806C11.2045 4.54806 10.9261 5.1338 10.6136 5.67525C10.421 5.99811 10.244 6.27792 10.0824 6.51484C9.92108 6.75167 9.78571 6.92617 9.67645 7.03802C9.56704 7.14998 9.46829 7.23967 9.3796 7.30743C9.29106 7.37522 9.22346 7.40385 9.17666 7.39338C9.12975 7.3829 9.08557 7.37251 9.04375 7.36211C8.9709 7.31523 8.91231 7.25146 8.86813 7.17077C8.82376 7.09007 8.79389 6.98851 8.77827 6.86615C8.76273 6.74371 8.75354 6.6384 8.75092 6.54985C8.74848 6.46141 8.7496 6.33632 8.75488 6.17493C8.7603 6.01346 8.76273 5.90421 8.76273 5.84693C8.76273 5.64904 8.76659 5.43428 8.77433 5.20259C8.78221 4.9709 8.78858 4.78733 8.79392 4.65209C8.79922 4.51671 8.80169 4.37348 8.80169 4.22248C8.80169 4.07149 8.7925 3.95307 8.77433 3.86712C8.75639 3.78129 8.72884 3.69796 8.69254 3.61719C8.65602 3.53649 8.60257 3.47407 8.53244 3.42975C8.46216 3.38549 8.37479 3.35037 8.27082 3.32428C7.99484 3.26183 7.64342 3.22804 7.21639 3.22279C6.24802 3.2124 5.62579 3.27493 5.34984 3.41031C5.2405 3.4675 5.14156 3.54565 5.0531 3.64451C4.95935 3.7591 4.94628 3.82163 5.01395 3.83192C5.32639 3.87872 5.54758 3.99068 5.67776 4.16769L5.72467 4.26149C5.76116 4.32917 5.7976 4.44898 5.83406 4.62076C5.87047 4.79255 5.89397 4.98258 5.90431 5.19075C5.9303 5.57089 5.9303 5.8963 5.90431 6.167C5.87824 6.43781 5.85362 6.64863 5.83012 6.79962C5.80663 6.95062 5.7715 7.07298 5.72467 7.16667C5.67776 7.26038 5.64655 7.31766 5.6309 7.33845C5.61528 7.35924 5.60226 7.37234 5.59192 7.37749C5.52425 7.40342 5.45386 7.41663 5.38102 7.41663C5.30807 7.41663 5.2196 7.38014 5.11549 7.30721C5.01141 7.23429 4.90338 7.13411 4.79142 7.00653C4.67946 6.87892 4.55319 6.7006 4.41256 6.47154C4.27205 6.24247 4.12625 5.97174 3.97525 5.65936L3.85032 5.43281C3.77223 5.28706 3.66554 5.07485 3.53017 4.79635C3.39471 4.51775 3.27498 4.24825 3.17089 3.98792C3.12929 3.87858 3.06678 3.79535 2.98349 3.73807L2.9444 3.71457C2.91841 3.69378 2.8767 3.6717 2.81947 3.64818C2.76216 3.62468 2.70237 3.60783 2.63984 3.59746L0.499929 3.613C0.281258 3.613 0.132888 3.66254 0.0547635 3.76148L0.0234974 3.80828C0.00787807 3.83435 0 3.87599 0 3.93329C0 3.99057 0.0156194 4.06087 0.0468854 4.14411C0.359273 4.87831 0.698987 5.58637 1.06603 6.26843C1.43307 6.95048 1.75202 7.4999 2.02269 7.91618C2.29342 8.33276 2.56937 8.72592 2.85055 9.09548C3.13172 9.46517 3.31784 9.70209 3.4089 9.80617C3.50008 9.91045 3.57169 9.98841 3.62375 10.0405L3.81903 10.2279C3.94398 10.3528 4.12748 10.5025 4.36959 10.6769C4.61176 10.8514 4.87986 11.0232 5.17403 11.1925C5.46825 11.3616 5.81054 11.4996 6.20108 11.6063C6.59156 11.7131 6.97162 11.756 7.34132 11.7353H8.23947C8.42163 11.7196 8.55963 11.6623 8.65343 11.5634L8.6845 11.5243C8.7054 11.4932 8.72496 11.4449 8.74301 11.38C8.76128 11.3149 8.77037 11.2432 8.77037 11.1652C8.76503 10.9414 8.78207 10.7396 8.82103 10.56C8.85995 10.3805 8.90432 10.2451 8.95394 10.1539C9.00354 10.0628 9.0595 9.98597 9.12179 9.92366C9.18421 9.86121 9.22869 9.82338 9.25479 9.81036C9.28072 9.79726 9.30142 9.78836 9.31704 9.78303C9.442 9.7414 9.58906 9.78172 9.75843 9.90418C9.92768 10.0265 10.0864 10.1776 10.2349 10.3572C10.3833 10.5369 10.5616 10.7385 10.7698 10.9624C10.9782 11.1863 11.1603 11.3527 11.3165 11.4622L11.4726 11.556C11.5769 11.6185 11.7123 11.6758 11.8789 11.7278C12.0453 11.7798 12.191 11.7929 12.3162 11.7669L14.3154 11.7357C14.5131 11.7357 14.667 11.7029 14.7762 11.638C14.8855 11.5729 14.9505 11.5012 14.9714 11.4232C14.9923 11.3451 14.9935 11.2566 14.9754 11.1575C14.9569 11.0588 14.9386 10.9897 14.9205 10.9507Z" fill="#FA5894"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="15" height="15" fill="white" transform="translate(0 0.000488281)"/>
+</clipPath>
+</defs>
+</svg></a><a class="footer-messanger" href="#"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M10.9396 0.000488281H4.06036C1.82144 0.000488281 0 1.82193 0 4.06084V10.9402C0 13.179 1.82144 15.0005 4.06036 15.0005H10.9397C13.1785 15.0005 15 13.179 15 10.9402V4.06084C15 1.82193 13.1785 0.000488281 10.9396 0.000488281V0.000488281ZM7.49999 11.6019C5.23841 11.6019 3.39855 9.76205 3.39855 7.50047C3.39855 5.2389 5.23841 3.39903 7.49999 3.39903C9.76156 3.39903 11.6014 5.2389 11.6014 7.50047C11.6014 9.76205 9.76156 11.6019 7.49999 11.6019ZM11.6995 4.36629C11.0312 4.36629 10.4876 3.82269 10.4876 3.15436C10.4876 2.48603 11.0312 1.94232 11.6995 1.94232C12.3678 1.94232 12.9115 2.48603 12.9115 3.15436C12.9115 3.82269 12.3678 4.36629 11.6995 4.36629Z" fill="#FA5894"/>
+<path d="M7.49991 4.27783C5.72333 4.27783 4.27783 5.72322 4.27783 7.49991C4.27783 9.27649 5.72333 10.722 7.49991 10.722C9.2766 10.722 10.722 9.27649 10.722 7.49991C10.722 5.72322 9.2766 4.27783 7.49991 4.27783Z" fill="#FA5894"/>
+<path d="M11.6995 2.82178C11.5162 2.82178 11.3669 2.97101 11.3669 3.15434C11.3669 3.33768 11.5162 3.48691 11.6995 3.48691C11.883 3.48691 12.0322 3.33779 12.0322 3.15434C12.0322 2.97089 11.883 2.82178 11.6995 2.82178Z" fill="#FA5894"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="15" height="15" fill="white" transform="translate(0 0.000488281)"/>
+</clipPath>
+</defs>
+</svg></a></div>
+        </div>
+        <div class="footer-map-wrap"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d0f66be42f80ed7bbd5aef78394f72a9a196b14ab1428a6ab5b192f90e7bbe9&amp;lang=ru_RU&amp;scroll=false"></script></div>
+      </div>
+    </footer>
+    <div class="modal" id="feedback-modal">
+      <div class="section-title">Запись <span>на прием</span></div>
+      <form class="feedback-form">
+        <input type="text" placeholder="Введите имя"/>
+        <input type="text" placeholder="Введите телефон"/>
+        <input type="text" placeholder="Выберите дату посещения" id="datepicker"/>
+        <input class="fill-btn" type="submit" value="Отправить заявку"/>
+      </form>
+      <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
+    </div>
+    <div class="modal" id="stock-modal">
+      <div class="section-title">Оставить заявку <span>на акцию</span></div>
+      <form class="feedback-form">
+        <input type="text" placeholder="Введите имя"/>
+        <input type="text" placeholder="Введите телефон"/>
+        <input class="fill-btn" type="submit" value="Отправить заявку"/>
+      </form>
+      <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
+    </div>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+    <script type="text/javascript" src="js/glide.min.js"></script>
+    <script type="text/javascript" src="js/iziModal.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
