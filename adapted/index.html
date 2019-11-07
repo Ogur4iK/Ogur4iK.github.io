@@ -33,7 +33,7 @@
               </nav>
             </div>
             <div class="fbk-container">
-              <button class="dotted-btn">Онлайн запись</button><span class="dotted-txt" data-modal="#feedback-modal">Заказать звонок</span>
+              <button class="dotted-btn" data-modal="#feedback-modal">Онлайн запись</button><span class="dotted-txt" data-modal="#feedback-modal">Заказать звонок</span>
             </div>
           </div><img class="burger" src="img/icons/burger.svg" alt="Меню"/><img class="close" src="img/icons/close.svg" alt="Закрыть"/>
         </div>
@@ -44,13 +44,13 @@
             <p class="header-text">Меня зовут Елена, я косметолог-эстетист. Работаю в космектологии более 18 лет. Специализируюсь на лечении проблемной кожи лица, процедурах и пилингах. Имею множество сертификатов и дипломов, подтверждающих мою компектенцию.</p>
             <p class="header-text">Очень важно, чтобы процедуры проходили в уютной, спокойной обстановке, в дружеской атмосфере. Поэтому рада видеть Вас у себя. Для каждого клиента мы разрабатываем индивидуальную программу, проводим процедуры и подбираем индивидуальные средства ухода. Я буду рада новым знакомствам.</p>
             <div class="hdr-buttons">
-              <button class="fill-btn">Записаться на прием</button>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
               <button class="dotted-btn">Подробнее об услугах</button>
             </div>
           </div>
           <div class="hdr-imgs">
             <div class="hdr-img-container"><img class="master-img" src="img/elena.jpg" alt="Курбак Елена"/></div>
-            <div class="play-container"><img src="img/play.svg" alt="Воспроизвести видео"/><span class="hdr-play-txt">Посмотреть видео обо мне</span></div>
+            <div class="play-container"><img src="img/play.svg" alt="Воспроизвести видео"/><span class="hdr-play-txt" data-modal="#video-modal">Посмотреть видео обо мне</span></div>
           </div><img class="lines l1" src="img/lines.svg" data-stellar-ratio="0.5"/><img class="lines l2" src="img/lines.svg" data-stellar-ratio="0.8"/>
         </div>
       </div>
@@ -60,14 +60,14 @@
         <h2 class="section-title">Услуги которые<br><span>оказываю для вас</span></h2>
         <p class="section-post-title">Выберите направление или посмотрите все</p>
         <div class="tabs">
-          <button class="tab">все услуги</button>
-          <button class="tab active-tab">уход за кожей</button>
-          <button class="tab">профилактика против старения</button>
-          <button class="tab">эпиляция</button>
-          <button class="tab">пилинги фруктовыми кислотами</button>
+          <button class="tab active-tab" data-filter=".filter">все услуги</button>
+          <button class="tab" data-filter=".fltr1">уход за кожей</button>
+          <button class="tab" data-filter=".fltr2">профилактика против старения</button>
+          <button class="tab" data-filter=".fltr3">эпиляция</button>
+          <button class="tab" data-filter=".fltr4">пилинги фруктовыми кислотами</button>
         </div>
         <div class="services-container">
-          <div class="service"><img class="petals ptl1" src="img/petals.png" data-stellar-ratio="0.75"/>
+          <div class="service filter fltr1"><img class="petals ptl1" src="img/petals.png" data-stellar-ratio="0.75"/>
             <div class="service-content">
               <h3 class="service-title">Чистка лица при помощи <br><span>ультразвукового аппарата (УЗ)<span></h3>
               <p class="service-desc">Это аппаратное очищение, которое осуществляется с помощью ультразвуковы волн высокой частоты. Ультразвук - один из самых современных и безболезненных способов очистить кожный покров. Процедуру проводит спецмалист прибором скрабером. При такой чистке не требуется распаривание. По окончании сеанса кожа выглядит свежо и молодо. Кожа не повреждается, комендоны под действием УЗ выбиваются на поверхность, воздействие на кожу происходит менее интенисвно, чем при мануальной чистке, но есть недостаток - более глубокие поры невозможно очистить:</p>
@@ -77,11 +77,11 @@
                 <li class="price-lst-itm">маска поросужевающая, увлажняющая, питательная от <span>500 р.</span></li>
                 <li class="price-lst-itm">завершающий креп по типу кожи</li>
               </ul>
-              <button class="fill-btn">Записаться на прием</button>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
             </div>
             <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg srvbg1" src="img/service-bg.svg"/><img class="service-lines svl1" src="img/srvice-elipse-lines.svg"/><img class="service-img svimg1" src="img/services/service-1.png" alt="Чистка лица при помощи ультразвукового аппарата (УЗ)"/></div>
           </div>
-          <div class="service">
+          <div class="service filter fltr1">
             <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg" src="img/service-bg.svg"/><img class="service-lines svl2" src="img/srvice-lines.svg"/><img class="service-img svimg2" src="img/services/service-2.png" alt="Чистка лица"/></div>
             <div class="service-content"><img class="petals ptl2" src="img/petals.png" data-stellar-ratio="0.8"/>
               <h3 class="service-title">Чистка лица <br><span>Гигиеническая чистка лица мануальная — <br>эффективное средство для красоты кожи.<span></h3>
@@ -110,11 +110,11 @@
                   успокаивающая - от <span>500 р.</span><br>
                   5. Завершающий креп после чистки лица по типу кожи - <span>200 р.</span>
                 </p>
-                <button class="dotted-btn">Записаться на прием</button>
+                <button class="dotted-btn" data-modal="#feedback-modal">Записаться на прием</button>
               </div>
             </div>
           </div>
-          <div class="service"><img class="petals ptl3" src="img/petals.png" data-stellar-ratio="0.75"/>
+          <div class="service filter fltr2"><img class="petals ptl3" src="img/petals.png" data-stellar-ratio="0.75"/>
             <div class="service-content">
               <h3 class="service-title">Чистка спины мануальная<br><span>Очищение при помощи ложечки УНО или руками.<span></h3>
               <div class="scroll-container">
@@ -127,11 +127,11 @@
                 <p class="price-lst-title">Ручную чистку нельзя проводить при:</p>
                 <p class="service-desc">Это аппаратное очищение, которое осуществляется с помощью ультразвуковы волн высокой частоты. Ультразвук - один из самых современных и безболезненных способов очистить кожный покров. Процедуру проводит спецмалист прибором скрабером. При такой чистке не требуется распаривание. По окончании сеанса кожа выглядит свежо и молодо. Кожа не повреждается, комендоны под действием УЗ выбиваются на поверхность, воздействие на кожу происходит менее интенисвно, чем при мануальной чистке, но есть недостаток - более глубокие поры невозможно очистить. Это аппаратное очищение, которое осуществляется с помощью ультразвуковы волн высокой частоты. Ультразвук - один из самых современных и безболезненных способов очистить кожный покров. Процедуру проводит спецмалист прибором скрабером. При такой чистке не требуется распаривание. По окончании сеанса кожа выглядит свежо и молодо. Кожа не повреждается, комендоны под действием УЗ выбиваются на поверхность, воздействие на кожу происходит менее интенисвно, чем при мануальной чистке, но есть недостаток - более глубокие поры невозможно очистить.</p>
               </div>
-              <button class="fill-btn">Записаться на прием</button>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
             </div>
             <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg srvbg1" src="img/service-bg.svg"/><img class="service-lines svl1" src="img/srvice-elipse-lines.svg"/><img class="service-lines svl3" src="img/srvice-elipse-lines.svg"/><img class="service-img svimg3" src="img/services/service-3.png" alt="Чистка спины мануальная"/></div>
           </div>
-          <div class="service">
+          <div class="service filter fltr3">
             <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg" src="img/service-bg.svg"/><img class="service-lines svl4" src="img/srvice-lines.svg"/><img class="service-img svimg2" src="img/services/service-4.png" alt="Эпиляция холодным воском, горячим, шугаринг"/></div>
             <div class="service-content pl-125"><img class="petals ptl2" src="img/petals.png" data-stellar-ratio="0.85"/>
               <h3 class="service-title lh-40">Эпиляция холодным воском, <br>горячим, шугаринг</h3>
@@ -147,10 +147,10 @@
               <p class="price-list">Окрашивание бровей краской -  <span>500 р.</span>, окршивание бровей хной - <span>650 р.</span>, оформление бровей - <span>400 р.</span></p>
               <p class="price-lst-title">Уход за руками</p>
               <p class="price-list">Массаж рук -  <span>350 р.</span><br>Парафиновая маска для рук -  <span>400 р.</span></p>
-              <button class="dotted-btn">Записаться на прием</button>
+              <button class="dotted-btn" data-modal="#feedback-modal">Записаться на прием</button>
             </div>
           </div>
-          <div class="service"><img class="petals ptl5" src="img/petals.png" data-stellar-ratio="0.8"/>
+          <div class="service filter fltr4"><img class="petals ptl5" src="img/petals.png" data-stellar-ratio="0.8"/>
             <div class="service-content">
               <h3 class="service-title">Поверхностные пилинги</h3>
               <div class="scroll-container">
@@ -169,11 +169,11 @@
                 </ul>
                 <p class="service-desc">Обычно курс пилинга состовляет 5-7 процедур с ....</p>
               </div>
-              <button class="fill-btn">Записаться на прием</button>
+              <button class="fill-btn" data-modal="#feedback-modal">Записаться на прием</button>
             </div>
             <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg srvbg1" src="img/service-bg.svg"/><img class="service-lines svl1" src="img/srvice-elipse-lines.svg"/><img class="service-lines svl3" src="img/srvice-elipse-lines.svg"/><img class="service-img svimg3" src="img/services/service-5.png" alt="Поверхностные пилинги"/></div>
           </div>
-          <div class="service">
+          <div class="service filter fltr4">
             <div class="service-img-container"><img class="service-dots" src="img/servise-dots.png"/><img class="service-bg" src="img/service-bg.svg"/><img class="service-lines svl4" src="img/srvice-lines.svg"/><img class="service-img svimg2" src="img/services/service-6.png" alt="Уходовые процедуры за лицом, шеей, декольте"/></div>
             <div class="service-content pl-80">
               <h3 class="service-title lh-40 ml-50">Уходовые процедуры за лицом, <br>шеей, декольте</h3>
@@ -184,7 +184,7 @@
                   Под массажный крем часто наносят сыворотки и концентраты для усиления эффекта. В уходовую процедуру часто включается УЧ чистка лица, микротоки. Обязательным этапов уходовой процедуры является нанесения маски. Маски бывают разные как по форме – кремовые, пастообразные, альгинатные, биоцеллюлозные, так и по эффекту, который необходим – увлажняющие, питательные, отбеливающие,
                 </p>
               </div>
-              <button class="dotted-btn ml-50">Записаться на прием</button>
+              <button class="dotted-btn ml-50" data-modal="#feedback-modal">Записаться на прием</button>
             </div>
           </div>
         </div>
@@ -334,7 +334,7 @@
               <p>telegram</p></a><a class="fbk-messanger" href="#"><img src="img/feedback/messangers/instagram.svg"/>
               <p>instagram</p></a></div><img class="feedback-bazilik" src="img/feedback/feedback-bazilik.png"/>
         </div>
-        <button class="dotted-btn">Записаться на прием</button>
+        <button class="dotted-btn" data-modal="#feedback-modal">Записаться на прием</button>
       </div><img class="feedback-bodegon" src="img/feedback/bodegon.png" data-stellar-ratio="1.1"/><img class="petals ptl10" src="img/feedback/feedback-petals.png" data-stellar-ratio="0.9"/>
     </section>
     <section id="certificates"><img class="legs" src="img/certificate/legs.png"/><img class="right-triangle" src="img/features/ftre-triangle.svg"/>
@@ -473,7 +473,7 @@
       <form class="feedback-form">
         <input type="text" placeholder="Введите имя"/>
         <input type="text" placeholder="Введите телефон"/>
-        <input type="text" placeholder="Выберите дату посещения"/>
+        <input type="text" placeholder="Выберите дату посещения" id="datepicker"/>
         <input class="fill-btn" type="submit" value="Отправить заявку"/>
       </form>
       <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
@@ -487,6 +487,9 @@
       </form>
       <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
     </div>
+    <div class="modal" id="video-modal">
+      <div class="video-container"><iframe src="https://www.youtube.com/embed/KHJPv7om_tY?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
     <script type="text/javascript" src="js/jquery.event.move.js"></script>
     <script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
@@ -494,6 +497,7 @@
     <script type="text/javascript" src="js/iziModal.min.js"></script>
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
