@@ -289,7 +289,9 @@
           <div class="service-title">Запишитесь на любую из процедур <br>и получите <span>скидку 30%!</span></div>
           <p class="capture-txt">Оставьте свой номер и мы свяжемся с вами в ближайшее время!</p>
           <form class="capture-form">
-            <input type="text" name="phone" placeholder="Ваш телефон"/>
+            <div class="form-line">
+              <input type="text" name="phone" placeholder="Ваш телефон" data-validate="data-validate"/><span class="form-hint">Обязательное поле</span>
+            </div>
             <input class="fill-btn" type="submit" value="Записаться на прием"/>
           </form>
           <div class="capture-desc"> <img src="img/icons/lock.svg"/>
@@ -649,9 +651,13 @@
     <div class="modal" id="feedback-modal">
       <div class="section-title">Запись <span>на прием</span></div>
       <form class="feedback-form">
-        <input type="text" placeholder="Введите имя"/>
-        <input type="text" placeholder="Введите телефон"/>
-        <input type="text" placeholder="Выберите дату посещения" id="datepicker"/>
+        <div class="form-line">
+          <input type="text" name="name" placeholder="Введите имя" data-validate="data-validate"/><span class="form-hint">Обязательное поле</span>
+        </div>
+        <div class="form-line">
+          <input type="text" name="phone" placeholder="Введите телефон" data-validate="data-validate"/><span class="form-hint">Обязательное поле</span>
+        </div>
+        <input type="text" name="date" placeholder="Выберите дату посещения" id="datepicker"/>
         <input class="fill-btn" type="submit" value="Отправить заявку"/>
       </form>
       <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
@@ -659,8 +665,12 @@
     <div class="modal" id="stock-modal">
       <div class="section-title">Оставить заявку <span>на акцию</span></div>
       <form class="feedback-form">
-        <input type="text" placeholder="Введите имя"/>
-        <input type="text" placeholder="Введите телефон"/>
+        <div class="form-line">
+          <input type="text" name="name" placeholder="Введите имя" data-validate="data-validate"/><span class="form-hint">Обязательное поле</span>
+        </div>
+        <div class="form-line">
+          <input type="text" name="phone" placeholder="Введите телефон" data-validate="data-validate"/><span class="form-hint">Обязательное поле</span>
+        </div>
         <input class="fill-btn" type="submit" value="Отправить заявку"/>
       </form>
       <div class="section-post-title">Ваши данные не будут переданы 3-им лицам и использованы для рассылки spam-писем</div>
