@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>MikMebel</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header_container">
+        <div class="header_wrap"><img class="logo" src="img/logo.png" alt="Логотип"/>
+          <h2 class="header_description">Изготовление мебели<br>и торгового оборудования</h2>
+        </div>
+        <div class="header_wrap">
+          <ul class="header_contacts">
+            <li class="contact_item"><a class="header_phone" href="tel: + 375 (17) 508-50-33">+ 375 (17) 508-50-33</a><img src="img/icons/phone.svg"/></li>
+            <li class="contact_item"><a class="header_email" href="mailto: mikmebel@list.ru">mikmebel@list.ru</a><img src="img/icons/email.svg"/></li>
+          </ul>
+          <button class="feedback">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="header_menu_container">
+        <ul class="container header_menu">
+          <li class="current_page_item"><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="projects.html">Наши проекты</a></li>
+          <li><a href="#">Сертификаты</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <ul class="bread-crumbs">
+        <li> <a href="index.html">Главная</a></li>
+        <li> <a href="about.html">О компании</a></li>
+      </ul>
+      <h1 class="section_header">О компании</h1>
+      <pre class="about-text">ООО «МиК мебель» — мебельное предприятие, обладающее сбалансированным технологическим процессом, успех в развитии которого, достигнут благодаря гармоничному сочетанию высокопроизводительного оборудования и навыков высококвалифицированных специалистов.
+
+Основными направлениями деятельности «МиК мебель» является производство мебели для объектов торговли (торговое оборудование) и мест общественного питания (магазины, аптеки, кафе), а также корпусной и встраиваемой мебели для дома и офиса (кухни, спальни, гостиные, детские комнаты, шкафы-купе) по индивидуальным проектам заказчика.
+
+На рынке Беларуси организация работает с 2011 года, имеет свою собственную дилерскую сеть с салонами и магазинами розничной торговли.
+
+Предприятие обладает собственной производственной базой более 1000 квадратных метров с собственными мощностями, наличием в штате более 30 человек задействованных в производственных процессах по изготовлению мебели и собственного отдела высококвалифицированных конструкторов. Все это  позволяет гарантировать выполнения заказа  в установленный срок и с наилучшим качеством, что подтверждается рекомендательными письмами от крупных застройщиков и концернов Республики Беларусь.
+
+ООО «МиК мебель» является динамично развивающейся компанией, золотое правило которой –  индивидуальный подход к каждому клиенту и добросовестное отношение к возложенным обязанностям!</pre>
+      <div class="consult-block">
+        <div class="caonsult-content">
+          <h4 class="consult-title">Консультация по услугам</h4>
+          <p class="consult-text">Специалисты компании ответят на все Ваши вопросы, подберут необходимое оборудование и подготовят коммерческое предложение.</p>
+        </div>
+        <button class="consult-btn feedback">Задать вопрос</button>
+      </div>
+    </div>
+    <hr/>
+    <footer class="footer">
+      <div class="footer_menu_container container"><img class="footer_logo" src="img/footer-logo.png"/>
+        <ul class="footer_menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="projects.html">Наши проекты</a></li>
+          <li><a href="#">Сертификаты</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p class="copyright_text">© 2019 “МиК мебель”. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <div id="feedback-modal">
+      <svg class="close-modal" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 26L26 1" stroke="#C4C4C4"></path>
+        <path d="M26 26L0.999999 1" stroke="#C4C4C4"></path>
+      </svg>
+      <h3 class="modal-title">Обратный звонок</h3>
+      <form class="feedback-modal-form">
+        <input type="text" placeholder="Ваше имя" name="name"/>
+        <input type="tel" placeholder="Номер телефона" name="tel"/>
+        <input type="submit" value="Отправить"/>
+      </form>
+    </div>
+    <div id="thank-modal">
+      <svg class="close-modal" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 26L26 1" stroke="#C4C4C4"></path>
+        <path d="M26 26L0.999999 1" stroke="#C4C4C4"></path>
+      </svg>
+      <h3 class="modal-title">Спасибо за обращение!</h3>
+      <p class="thank-text">Ваша заявка принята. Наш менеджер свяжется с Вами в ближайшее время.</p>
+    </div>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/iziModal.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
