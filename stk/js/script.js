@@ -42,4 +42,14 @@ jQuery(function($){
     $(".close-icon").click(function(){
         $(this).parents('[id*="modal"]').iziModal('close');
     });
+
+    $('.burger').click(function(){
+        $('.burger, .top-nav-wrap').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
+    $('.menu-item').click(function(){
+        $('.burger, .top-nav-wrap').removeClass('active');
+        $('body').removeClass('lock');
+    });
 });

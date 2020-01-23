@@ -93,7 +93,10 @@
                <svg class="top-icon"><use xlink:href="#time-icon"></use></svg>Круглосуточно </p>
             <p class="mail">stk@gmail.com</p>
           </div>
-          <div class="right-content"><svg class="top-icon"><use xlink:href="#phone-icon"></use></svg><a class="phone" href="tel: +7(926) 820 63 85">+7(926) 820 63 85</a></div>
+          <div class="right-content">
+            <div class="phone"><svg class="top-icon"><use xlink:href="#phone-icon"></use></svg><a href="tel: +7(926) 820 63 85">+7(926) 820 63 85</a></div>
+            <div class="burger"><span></span></div>
+          </div>
         </div>
       </div>
       <div class="top-nav-wrap">
@@ -107,25 +110,23 @@
               <li class="menu-item"> <a href="#delivery">Доставка</a></li>
             </ul>
             <button class="feedback-btn feedback-open">Заказать звонок</button>
+            <div class="menu-contacts">
+              <p class="time">
+                 <svg class="top-icon"><use xlink:href="#time-icon"></use></svg>Круглосуточно </p>
+              <p class="mail">stk@gmail.com</p>
+            </div>
           </div>
         </nav>
       </div>
     </header>
-    <div class="slider owl-carousel">
-      <div class="slider-item" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/slider/slide-1.jpg)">
-        <div class="slider-wrap container">
-          <h3 class="slider-text">Заголовок</h3>
-          <p class="slider-text">Текст описания</p>
-        </div>
+    <div class="slider-wrap">
+      <div class="slider owl-carousel">
+        <div class="slider-item" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/slider/slide-1.jpg)"></div>
+        <div class="slider-item" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/slider/slide-2.jpg)"></div>
+        <div class="slider-item" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/slider/slide-3.jpg)"></div>
       </div>
-      <div class="slider-item" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/slider/slide-2.jpg)">
-        <div class="slider-wrap container">
-          <h3 class="slider-text">Заголовок</h3>
-          <p class="slider-text">Текст описания</p>
-        </div>
-      </div>
-      <div class="slider-item" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/slider/slide-3.jpg)">
-        <div class="slider-wrap container">
+      <div class="slider-content">
+        <div class="container slider-container">
           <h3 class="slider-text">Заголовок</h3>
           <p class="slider-text">Текст описания</p>
         </div>
@@ -243,7 +244,7 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer-contacts">
-          <li>Контактный телефон: +7(926) 820 63 85</li>
+          <li>Контактный телефон: <span>+7(926) 820 63 85</span></li>
           <li>E-mail: stk@gmail.com</li>
           <li>
             <button class="feedback-btn feedback-open">Заказать звонок</button>
