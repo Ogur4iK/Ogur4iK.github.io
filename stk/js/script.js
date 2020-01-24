@@ -13,7 +13,6 @@ jQuery(function($){
         overlayColor: 'rgba(0,0,0,0.7)',
         borderBottom: false,
         radius: 5,
-        width: 400,
         history: true
     });
 
@@ -21,7 +20,6 @@ jQuery(function($){
         overlayColor: 'rgba(0,0,0,0.7)',
         borderBottom: false,
         radius: 5,
-        width: 800,
         history: true
     });
 
