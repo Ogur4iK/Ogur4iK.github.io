@@ -6,7 +6,7 @@ jQuery(function($){
         loop: true,
         arrows: 'always'
     });
-    
+
     var fotorama = $fotoramaDiv.data('fotorama');
     $(window).resize(function() {
         recalcWidth();
