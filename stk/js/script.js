@@ -50,4 +50,6 @@ jQuery(function($){
         $('.burger, .top-nav-wrap').removeClass('active');
         $('body').removeClass('lock');
     });
+
+    $('.price-table').stacktable();
 });
