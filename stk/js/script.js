@@ -52,4 +52,10 @@ jQuery(function($){
     });
 
     $('.price-table').stacktable();
+
+    $("a[href^='#']").click(function(){
+        var _href = '#' + anchor;
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });
