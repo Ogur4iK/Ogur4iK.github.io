@@ -29,13 +29,18 @@
 <path d="M15.0556 7.29639C10.801 7.29639 7.34906 10.7481 7.34906 15.003C7.34906 19.2578 10.801 22.7096 15.0556 22.7096C19.3105 22.7096 22.7622 19.2578 22.7622 15.003C22.7622 10.7481 19.3105 7.29639 15.0556 7.29639ZM15.0556 20.002C12.2955 20.002 10.0566 17.7634 10.0566 15.003C10.0566 12.2426 12.2955 10.0039 15.0556 10.0039C17.816 10.0039 20.0547 12.2426 20.0547 15.003C20.0547 17.7634 17.816 20.002 15.0556 20.002Z"/>
 <path d="M24.8663 6.99152C24.8663 7.98506 24.0607 8.79066 23.0669 8.79066C22.0734 8.79066 21.2678 7.98506 21.2678 6.99152C21.2678 5.99775 22.0734 5.19238 23.0669 5.19238C24.0607 5.19238 24.8663 5.99775 24.8663 6.99152Z"/>
 </symbol>
+<symbol id="thank" viewBox="0 0 230 230">
+<path d="M115 0C51.5865 0 0 51.5865 0 115C0 178.414 51.5865 230 115 230C178.414 230 230 178.414 230 115C230 51.5865 178.414 0 115 0Z" fill="#62FF7B"/>
+<path d="M173.286 90.6299L110.994 152.92C109.125 154.789 106.672 155.73 104.219 155.73C101.766 155.73 99.3125 154.789 97.4437 152.92L66.2984 121.775C62.5503 118.029 62.5503 111.971 66.2984 108.225C70.0448 104.477 76.1005 104.477 79.8487 108.225L104.219 132.595L159.736 77.0796C163.482 73.3315 169.538 73.3315 173.286 77.0796C177.033 80.826 177.033 86.8817 173.286 90.6299Z" fill="#FAFAFA"/>
+</symbol>
 </svg>
-    <header>
+    <header class="header">
       <nav class="menu">
-        <div class="menu_part"><a href="/aiva/"><img class="logo" src="img/logo.svg" alt="Aiva.by"/></a>
+        <div class="menu_part logo_part"><a href="/"><img class="logo" src="img/logo.svg" alt="Aiva.by"/></a>
           <p class="menu_desc">студия разработки и дизайна</p>
+          <div id="burger"><span></span></div>
         </div>
-        <div class="menu_part">
+        <div class="menu_part nav_part">
           <ul class="menu_items">
             <li><a class="active_link" href="/aiva/portfolio.html">Портфолио</a></li>
             <li><a href="/aiva/services.html">Услуги</a></li>
@@ -52,8 +57,8 @@
   <div class="container">
     <h1 class="page_title">О студии</h1>
     <div class="row">
-      <div class="col-9 about_text">
-        <p><a href="/">«Айва»</a> — студия разработки и дизайна. Мы разрабатываем простые и сложные сайты, улучшаем действующие и помогаем их продвигать.</p>
+      <div class="col-lg-9 about_text">
+        <p><a href="/aiva/">«Айва»</a> — студия разработки и дизайна. Мы разрабатываем простые и сложные сайты, улучшаем действующие и помогаем их продвигать.</p>
         <p>Мы быстро вникаем в работу, не срываем дедлайны, нас не нужно контролировать — мы сами с вами свяжемся и отчитаемся о результатах.</p>
         <p>К нам обращаются, когда нужно сделать «круто и результативно». Мы из тех, кто с головой погружается в каждый проект и находит нестандартные решения. Мы переживаем за продукт своего клиента, как за свой.</p>
         <h2 class="about_subtitle">Наше ключевое преимущество — сильная команда</h2>
@@ -66,11 +71,11 @@
 <section class="feedback_section">
   <div class="container">
     <div class="row">
-      <div class="col-5">
+      <div class="col-md-5">
         <h2 class="feedback_title">Готовы начать проект?</h2>
         <p class="feedback_text">Расскажите нам о своей задаче. Ответим вам сегодня и поможем подобрать лучшее решение.</p>
       </div>
-      <div class="col-7">
+      <div class="col-md-7">
         <form class="feedback_form">
           <input type="text" name="name" placeholder="Представьтесь, пожалуйста"/>
           <input type="text" name="phone" placeholder="Введите ваш номер телефона"/>
@@ -82,38 +87,56 @@
   </div>
 </section>
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-2"><img class="footer_logo" src="img/logo.svg" alt="Aiva.by"/></div>
-      <div class="col-8">
-        <nav class="footer_nav">
-          <ul class="footer_menu">
-            <li><a href="/aiva/portfolio.html">Портфолио</a></li>
-            <li><a href="/aiva/services.html">Услуги</a></li>
-            <li><a href="/aiva/about.html">О студии</a></li>
-            <li><a href="/aiva/contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="footer_contacts">
-          <li class="footer_contact"><a href="#">
-              <svg class="contact_icon">
-                <use xlink:href="#mail"><span>hi@aiva.by</span></use>
-              </svg></a></li>
-          <li class="footer_contact"><a href="#">
-              <svg class="contact_icon">
-                <use xlink:href="#phone"><span>+375 33 379-77-47</span></use>
-              </svg></a></li>
-          <li class="footer_contact"><a href="#">
-              <svg class="contact_icon">
-                <use xlink:href="#telegram"><span>@aivaby</span></use>
-              </svg></a></li>
-        </ul><span class="copyright">© 2018-2020 </span><a class="copyright_link" href="#">Политика конфиденциальности</a>
-      </div>
-      <div class="col-2 footer_inst"><a class="inst_link" href="#">
-          <svg class="inst_icon">
-            <use xlink:href="#inst"></use>
-          </svg><span>Мы в Instagram</span></a></div>
-    </div>
+  <div class="container footer_container">
+    <div class="footer_logo_wrap"><img class="footer_logo" src="img/logo.svg" alt="Aiva.by"/></div>
+    <nav class="footer_nav">
+      <ul class="footer_menu">
+        <li><a href="/aiva/portfolio.html">Портфолио</a></li>
+        <li><a href="/aiva/services.html">Услуги</a></li>
+        <li><a href="/aiva/about.html">О студии</a></li>
+        <li><a href="/aiva/contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="footer_contacts">
+      <li class="footer_contact"><a href="mailto: hi@aiva.by">
+          <svg class="contact_icon">
+            <use xlink:href="#mail"><span>hi@aiva.by</span></use>
+          </svg></a></li>
+      <li class="footer_contact"><a href="tel: 375333797747">
+          <svg class="contact_icon">
+            <use xlink:href="#phone"><span>+375 33 379-77-47</span></use>
+          </svg></a></li>
+      <li class="footer_contact"><a href="https://t.me/aivaby" target="_blank">
+          <svg class="contact_icon">
+            <use xlink:href="#telegram"><span>@aivaby</span></use>
+          </svg></a></li>
+    </ul>
+    <p class="copyright_wrap"><span class="copyright">© 2018-2020 </span><a class="copyright_link" href="#">Политика конфиденциальности</a></p>
+    <div class="footer_inst"><a class="inst_link" href="#">
+        <svg class="inst_icon">
+          <use xlink:href="#inst"></use>
+        </svg><span>Мы в Instagram</span></a></div>
   </div>
 </footer>
+<div id="overlay">
+  <div class="modal" id="modal_feedback">
+    <div class="close_modal"></div>
+    <p class="modal_title">Обсудить проект</p>
+    <p class="modal_desc">Расскажите нам о своей задаче.<br> Ответим вам сегодня и поможем подобрать лучшее решение.</p>
+    <form class="feedback_form">
+      <input type="text" name="name" placeholder="Представьтесь, пожалуйста"/>
+      <input type="text" name="phone" placeholder="Введите ваш номер телефона"/>
+      <textarea name="description" placeholder="Опишите свой проект, на каком вы сейчас этапе, какую работу вы хотите нам поручить"></textarea>
+      <input class="accent_btn feedback_btn" type="submit" value="Свяжитесь с нами"/>
+    </form>
+  </div>
+  <div class="modal" id="modal_thank">
+    <div class="close_modal"></div>
+    <svg class="thank_img">
+      <use xlink:href="#thank"></use>
+    </svg>
+    <p class="modal_title">Спасибо!</p>
+    <p class="modal_desc">Спасибо! Ваше сообщение успешно отправлено.</p>
+  </div>
+</div>
 <script type="text/javascript" src="js/script.js"></script>
