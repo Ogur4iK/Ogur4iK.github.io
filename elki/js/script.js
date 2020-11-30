@@ -7,74 +7,77 @@ $(window).load(function () {
         hideDistantElements: false,
         positionProperty: 'transform'
     });
+    init();
 
-    $('#burger').on('click', function () {
-        $('body').toggleClass('lock');
-        $(this).toggleClass('active');
-        $('.nav_part').toggleClass('active');
-    });
+    new SmoothScroll();
 
-    $(window).on('resize', function () { 
-        clearTags();
-        culcTags();
-        console.log('resized');
-    });
-
-    $('.menu_btn').on('click', function () { 
-        openModal('#modal_feedback');
-    });
-
-    $('.close_modal, #overlay').on('click', function () {
-        closeModal();
-    });
-
-    $('.modal').on('click', function (event) {
-        event.stopPropagation ? event.stopPropagation() : (event.cancelBubble = true);
-    });
-
-    $('.feedback_btn').on('click', function () { 
-        closeModal(true);
-        openModal('#modal_thank');
-        return false;
-    });
+    function init(){
+        new SmoothScroll(document,120,12)
+    }
     
-    culcTags();
+    function SmoothScroll(target, speed, smooth) {
+        if (target === document)
+            target = (document.scrollingElement 
+                  || document.documentElement 
+                  || document.body.parentNode 
+                  || document.body) // cross browser support for document scrolling
+          
+        var moving = false
+        var pos = target.scrollTop
+      var frame = target === document.body 
+                  && document.documentElement 
+                  ? document.documentElement 
+                  : target // safari is the new IE
+      
+        target.addEventListener('mousewheel', scrolled, { passive: false })
+        target.addEventListener('DOMMouseScroll', scrolled, { passive: false })
+    
+        function scrolled(e) {
+            e.preventDefault(); // disable default scrolling
+    
+            var delta = normalizeWheelDelta(e)
+    
+            pos += -delta * speed
+            pos = Math.max(0, Math.min(pos, target.scrollHeight - frame.clientHeight)) // limit scrolling
+    
+            if (!moving) update()
+        }
+    
+        function normalizeWheelDelta(e){
+            if(e.detail){
+                if(e.wheelDelta)
+                    return e.wheelDelta/e.detail/40 * (e.detail>0 ? 1 : -1) // Opera
+                else
+                    return -e.detail/3 // Firefox
+            }else
+                return e.wheelDelta/120 // IE,Safari,Chrome
+        }
+    
+        function update() {
+            moving = true
+        
+            var delta = (pos - target.scrollTop) / smooth
+        
+            target.scrollTop += delta
+        
+            if (Math.abs(delta) > 0.5)
+                requestFrame(update)
+            else
+                moving = false
+        }
+    
+        var requestFrame = function() { // requestAnimationFrame cross browser
+            return (
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function(func) {
+                    window.setTimeout(func, 1000 / 50);
+                }
+            );
+        }()
+    }
 });
 
-function culcTags() {
-    var tags = $('.tag');
-    var parrentWidth = $('#srv_tags').innerWidth();
-    var childernWidth = $(tags[0]).width();
-    for (var i = 1; i < tags.length; i++) {
-        childernWidth += $(tags[i]).width() + 44;
-        if (childernWidth < parrentWidth) {
-            $(tags[i]).addClass('dotted');
-        } else {
-            $(tags[i]).before('<div class="break">');
-            childernWidth = $(tags[i]).width();
-        }
-    }
-}
-
-function clearTags() {
-    $('.tag').removeClass('dotted');
-    $('#srv_tags>.break').remove();
-}
-
-function openModal(menuId) {
-    $('#overlay').fadeIn();
-    $('body').addClass('lock')
-    $(menuId).fadeIn();
-    $(menuId).addClass('active');
-    $('.nav_part').removeClass('active');
-    $('#burger').removeClass('active');
-}
-
-function closeModal(saveOverlay){
-    if(!saveOverlay){
-        $('#overlay').fadeOut();
-    }
-    $('.modal.active').fadeOut();
-    $('.modal.active').removeClass('active');
-    $('body').removeClass('lock');
-}
